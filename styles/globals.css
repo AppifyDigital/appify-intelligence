@@ -341,11 +341,11 @@ body {
 }
 
 .type-appify.animate {
-    animation: typewriter-appify 1.5s steps(5, end) forwards;
+    animation: typewriter-appify 1.0s steps(5, end) forwards;
 }
 
 .type-intelligence.animate {
-    animation: typewriter-intelligence 2.2s steps(11, end) forwards;
+    animation: typewriter-intelligence 1.5s steps(11, end) forwards;
 }
 
 /* Tablet Responsiveness */
