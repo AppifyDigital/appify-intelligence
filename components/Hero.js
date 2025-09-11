@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function Hero() {
   return (
     <section className="hero">
@@ -13,6 +15,7 @@ export default function Hero() {
           <div className="hero-cta">
             <a href="#contact" className="btn btn-primary">Start Your AI Project</a>
             <a href="#services" className="btn btn-secondary">Explore Services</a>
+            <Link href="/case-studies" className="btn btn-tertiary">View Case Studies</Link>
           </div>
         </div>
         <div className="hero-visual">
