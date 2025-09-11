@@ -1,26 +1,26 @@
 const reasons = [
   {
-    icon: '✅',
+    icon: '⭐',
     title: 'Proven Track Record',
     description: 'Extensive experience across web, mobile, and automation projects'
   },
   {
-    icon: '🧠',
+    icon: '🎨',
     title: 'Deep AI Expertise',
     description: 'Specialized knowledge in AI integration and custom solution development'
   },
   {
-    icon: '🔄',
+    icon: '🌟',
     title: 'Full-Service AI',
     description: 'Complete range of end-to-end AI services and solutions'
   },
   {
-    icon: '🌍',
+    icon: '🌐',
     title: 'Global Trust',
     description: 'Trusted by leading organizations in Ireland and internationally'
   },
   {
-    icon: '🏆',
+    icon: '💎',
     title: 'Award Recognition',
     description: 'Award-nominated for excellence in AI and agency services'
   }

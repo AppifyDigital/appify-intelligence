@@ -31,7 +31,7 @@ export default function Home() {
         <meta property="og:title" content="AI Development & Automation Specialists | Appify Intelligence" />
         <meta property="og:description" content="Discover Appify Intelligence's award-nominated AI expertise—custom solutions for web, mobile, automation, and agency management across Ireland." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.appifyintelligence.ie" />
+        <meta property="og:url" content="https://www.appifyintelligence.com" />
         
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="AI Development & Automation Specialists | Appify Intelligence" />

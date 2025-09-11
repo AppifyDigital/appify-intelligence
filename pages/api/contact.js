@@ -26,7 +26,7 @@ export default async function handler(req, res) {
     // Email to company
     await transporter.sendMail({
       from: process.env.SMTP_USER,
-      to: 'hello@appifyintelligence.ie', // Your business email
+      to: 'hello@appifyintelligence.com', // Your business email
       subject: `New Contact Form Submission from ${name}`,
       html: `
         <h2>New Contact Form Submission</h2>

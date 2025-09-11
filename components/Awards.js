@@ -1,7 +1,7 @@
 const awards = [
-  { icon: '🏆', name: 'Best App' },
-  { icon: '🏆', name: 'Best Small Agency' },
-  { icon: '🏆', name: 'Best Use of AI' }
+  { icon: '🚀', name: 'Best App' },
+  { icon: '⚡', name: 'Best Small Agency' },
+  { icon: '🔥', name: 'Best Use of AI' }
 ]
 
 export default function Awards() {

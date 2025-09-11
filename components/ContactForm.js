@@ -53,16 +53,16 @@ export default function ContactForm() {
             <p>Contact us today to discuss your next AI-driven project.</p>
             <div className="contact-details">
               <div className="contact-item">
-                <span className="contact-icon">📧</span>
-                <span>hello@appifyintelligence.ie</span>
+                <span className="contact-icon">💬</span>
+                <span>hello@appifyintelligence.com</span>
               </div>
               <div className="contact-item">
-                <span className="contact-icon">📱</span>
-                <span>+353 (0)1 234 5678</span>
+                <span className="contact-icon">🔗</span>
+                <span>1 800 852 307</span>
               </div>
               <div className="contact-item">
                 <span className="contact-icon">📍</span>
-                <span>Dublin, Ireland</span>
+                <span>Tullamore, Co. Offaly, Ireland</span>
               </div>
             </div>
           </div>
