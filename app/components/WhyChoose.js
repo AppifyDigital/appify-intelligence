@@ -44,7 +44,7 @@ export default function WhyChoose() {
         </div>
         <div className="case-studies-cta">
           <h3>See Our AI Solutions in Action</h3>
-          <p>Explore real-world implementations and the results we've delivered for clients across various industries.</p>
+          <p>Explore real-world implementations and the results we&apos;ve delivered for clients across various industries.</p>
           <Link href="/case-studies" className="btn btn-tertiary">View Success Stories</Link>
         </div>
       </div>

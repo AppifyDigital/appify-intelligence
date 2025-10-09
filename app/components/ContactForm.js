@@ -1,3 +1,5 @@
+'use client'
+
 import { useState } from 'react'
 
 export default function ContactForm() {
@@ -37,7 +39,7 @@ export default function ContactForm() {
       } else {
         setSubmitStatus('error')
       }
-    } catch (error) {
+    } catch {
       setSubmitStatus('error')
     } finally {
       setIsSubmitting(false)

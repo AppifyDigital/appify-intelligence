@@ -1,8 +1,9 @@
+'use client'
+
 import { useEffect, useState } from 'react'
 
 export default function Loader({ onComplete }) {
   const [isVisible, setIsVisible] = useState(true)
-  const [aiExpanded, setAiExpanded] = useState(false)
   const [typeAppify, setTypeAppify] = useState(false)
   const [typeIntelligence, setTypeIntelligence] = useState(false)
 
@@ -10,7 +11,6 @@ export default function Loader({ onComplete }) {
     const timer1 = setTimeout(() => {
       document.querySelector('.ai-text')?.classList.add('fade-out')
       document.querySelector('.expanded-text')?.classList.add('show')
-      setAiExpanded(true)
     }, 1000)
 
     const timer2 = setTimeout(() => {

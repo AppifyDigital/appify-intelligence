@@ -10,7 +10,7 @@ export default function Hero() {
             Advanced AI Solutions for Web, Mobile & Business Automation
           </p>
           <p className="hero-description">
-            At Appify Intelligence, we are Ireland's specialists in full stack AI development—delivering world-class software, web, and mobile solutions, as well as advanced AI workflow and process automation for ambitious organizations.
+            At Appify Intelligence, we are Ireland&apos;s specialists in full stack AI development—delivering world-class software, web, and mobile solutions, as well as advanced AI workflow and process automation for ambitious organizations.
           </p>
           <div className="hero-cta">
             <a href="#contact" className="btn btn-primary">Start Your AI Project</a>

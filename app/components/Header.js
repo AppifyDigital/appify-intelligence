@@ -1,12 +1,14 @@
+'use client'
+
 import { useState } from 'react'
 import Link from 'next/link'
-import { useRouter } from 'next/router'
+import { usePathname } from 'next/navigation'
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const router = useRouter()
+  const pathname = usePathname()
 
-  const isHomePage = router.pathname === '/'
+  const isHomePage = pathname === '/'
 
   return (
     <header className="header">
@@ -31,7 +33,7 @@ export default function Header() {
               <li><Link href="/#services">Services</Link></li>
               <li><Link href="/#expertise">Expertise</Link></li>
               <li><Link href="/#products">Products</Link></li>
-              <li><Link href="/case-studies" className={router.pathname === '/case-studies' ? 'active' : ''}>Case Studies</Link></li>
+              <li><Link href="/case-studies" className={pathname === '/case-studies' ? 'active' : ''}>Case Studies</Link></li>
               <li><Link href="/#contact">Contact</Link></li>
             </>
           )}

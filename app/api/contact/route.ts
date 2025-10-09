@@ -1,17 +1,14 @@
-import nodemailer from 'nodemailer'
+import nodemailer, { TransportOptions } from 'nodemailer'
+import { NextRequest, NextResponse } from 'next/server'
 
-export default async function handler(req, res) {
-  if (req.method !== 'POST') {
-    return res.status(405).json({ message: 'Method not allowed' })
-  }
-
-  const { name, email, company, message } = req.body
-
-  if (!name || !email || !message) {
-    return res.status(400).json({ message: 'Missing required fields' })
-  }
-
+export async function POST(request: NextRequest) {
   try {
+    const { name, email, company, message } = await request.json()
+
+    if (!name || !email || !message) {
+      return NextResponse.json({ message: 'Missing required fields' }, { status: 400 })
+    }
+
     // Create transporter (configure with your email provider)
     const transporter = nodemailer.createTransport({
       host: process.env.SMTP_HOST || 'smtp.gmail.com',
@@ -21,7 +18,7 @@ export default async function handler(req, res) {
         user: process.env.SMTP_USER, // Your email
         pass: process.env.SMTP_PASSWORD, // Your app password
       },
-    })
+    } as TransportOptions)
 
     // Email to company
     await transporter.sendMail({
@@ -51,9 +48,9 @@ export default async function handler(req, res) {
       `,
     })
 
-    res.status(200).json({ message: 'Email sent successfully' })
+    return NextResponse.json({ message: 'Email sent successfully' }, { status: 200 })
   } catch (error) {
     console.error('Email error:', error)
-    res.status(500).json({ message: 'Failed to send email' })
+    return NextResponse.json({ message: 'Failed to send email' }, { status: 500 })
   }
 }
