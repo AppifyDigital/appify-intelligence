@@ -85,11 +85,11 @@ export default function Contact() {
             <div className="space-y-6">
               {/* Email */}
               <div className="flex items-start gap-4">
-                <Mail className="mt-1 h-6 w-6 flex-shrink-0 text-yellow-500" />
+                <Mail className="mt-1 h-6 w-6 flex-shrink-0 text-primary" />
                 <div>
                   <a
                     href="mailto:hello@appifyintelligence.com"
-                    className="text-lg text-yellow-500 transition-colors hover:text-yellow-600"
+                    className="text-lg text-primary transition-colors hover:text-primary"
                   >
                     hello@appifyintelligence.com
                   </a>
@@ -98,11 +98,11 @@ export default function Contact() {
 
               {/* Phone */}
               <div className="flex items-start gap-4">
-                <Phone className="mt-1 h-6 w-6 flex-shrink-0 text-yellow-500" />
+                <Phone className="mt-1 h-6 w-6 flex-shrink-0 text-primary" />
                 <div>
                   <a
                     href="tel:1800852307"
-                    className="text-lg text-yellow-500 transition-colors hover:text-yellow-600"
+                    className="text-lg text-primary transition-colors hover:text-primary"
                   >
                     1 800 852 307
                   </a>
@@ -111,16 +111,16 @@ export default function Contact() {
 
               {/* Addresses */}
               <div className="flex items-start gap-4">
-                <MapPin className="mt-1 h-6 w-6 flex-shrink-0 text-yellow-500" />
+                <MapPin className="mt-1 h-6 w-6 flex-shrink-0 text-primary" />
                 <div className="space-y-4">
                   <div>
-                    <p className="font-medium text-yellow-500">
+                    <p className="font-medium text-primary">
                       Main office: Appify Ltd., Ashfield, Tullamore, Co. Offaly, Ireland.
                       R35 KX60
                     </p>
                   </div>
                   <div>
-                    <p className="font-medium text-yellow-500">
+                    <p className="font-medium text-primary">
                       UK office: Appify Ltd., The Fold, Spencer St., Leamington Spa, UK.
                       CV31 3NE
                     </p>
@@ -142,7 +142,7 @@ export default function Contact() {
                   onChange={handleChange}
                   placeholder="Full Name"
                   required
-                  className="w-full rounded-xl border-2 border-gray-200 px-6 py-4 text-gray-900 placeholder-gray-400 transition-colors focus:border-yellow-500 focus:outline-none"
+                  className="w-full rounded-xl border-2 border-gray-200 px-6 py-4 text-gray-900 placeholder-gray-400 transition-colors focus:border-primary focus:outline-none"
                 />
               </div>
 
@@ -155,7 +155,7 @@ export default function Contact() {
                   onChange={handleChange}
                   placeholder="Your Email"
                   required
-                  className="w-full rounded-xl border-2 border-gray-200 px-6 py-4 text-gray-900 placeholder-gray-400 transition-colors focus:border-yellow-500 focus:outline-none"
+                  className="w-full rounded-xl border-2 border-gray-200 px-6 py-4 text-gray-900 placeholder-gray-400 transition-colors focus:border-primary focus:outline-none"
                 />
               </div>
 
@@ -167,7 +167,7 @@ export default function Contact() {
                   value={formData.company}
                   onChange={handleChange}
                   placeholder="Company Name"
-                  className="w-full rounded-xl border-2 border-gray-200 px-6 py-4 text-gray-900 placeholder-gray-400 transition-colors focus:border-yellow-500 focus:outline-none"
+                  className="w-full rounded-xl border-2 border-gray-200 px-6 py-4 text-gray-900 placeholder-gray-400 transition-colors focus:border-primary focus:outline-none"
                 />
               </div>
 
@@ -196,7 +196,7 @@ export default function Contact() {
                   placeholder="Tell us about your AI project..."
                   required
                   rows={6}
-                  className="w-full resize-none rounded-xl border-2 border-gray-200 px-6 py-4 text-gray-900 placeholder-gray-400 transition-colors focus:border-yellow-500 focus:outline-none"
+                  className="w-full resize-none rounded-xl border-2 border-gray-200 px-6 py-4 text-gray-900 placeholder-gray-400 transition-colors focus:border-primary focus:outline-none"
                 />
               </div>
 

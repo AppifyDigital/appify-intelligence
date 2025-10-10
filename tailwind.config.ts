@@ -16,7 +16,7 @@ export default {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "var(--primary)",
+          DEFAULT: "#FFB300",
         },
         bgblack: "var(--bgblack)",
         card: {

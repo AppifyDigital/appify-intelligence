@@ -34,22 +34,22 @@ function Footer() {
               className="h-12 w-auto"
             />
           </Link>
-          <Link href="/" className="transition-colors hover:text-[#ffb300]">
+          <Link href="/" className="transition-colors hover:text-primary">
             Home
           </Link>
-          <Link href="/case-studies" className="transition-colors hover:text-[#ffb300]">
+          <Link href="/case-studies" className="transition-colors hover:text-primary">
             Case Studies
           </Link>
-          <Link href="/blog" className="transition-colors hover:text-[#ffb300]">
+          <Link href="/blog" className="transition-colors hover:text-primary">
             Explore Our Blog
           </Link>
-          <Link href="/resources" className="transition-colors hover:text-[#ffb300]">
+          <Link href="/resources" className="transition-colors hover:text-primary">
             Resources
           </Link>
-          <Link href="/faq" className="transition-colors hover:text-[#ffb300]">
+          <Link href="/faq" className="transition-colors hover:text-primary">
             FAQ
           </Link>
-          <Link href="/contact" className="text-[#ffb300] hover:text-[#ffb300]">
+          <Link href="/contact" className="text-primary hover:text-primary">
             Contact us
           </Link>
         </nav>
@@ -255,13 +255,13 @@ function Footer() {
           <div className="flex flex-col space-y-4 text-center sm:flex-row sm:space-x-8 sm:space-y-0">
             <Link
               href="/privacy-policy"
-              className="transition-colors hover:text-[#ffb300]"
+              className="transition-colors hover:text-primary"
             >
               Privacy Policy
             </Link>
             {/* Bottom Section <Link
               href="/terms-and-conditions"
-              className="transition-colors hover:text-[#ffb300]"
+              className="transition-colors hover:text-primary"
             >
               Terms & Conditions
             </Link> */}
@@ -273,7 +273,7 @@ function Footer() {
               href="https://www.linkedin.com/company/appify-limited/"
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-full bg-white/10 p-3 text-black/80 hover:text-[#ffb300]"
+              className="rounded-full bg-white/10 p-3 text-black/80 hover:text-primary"
             >
               <Linkedin className="h-4 w-4" />
               <span className="sr-only">LinkedIn</span>
@@ -282,7 +282,7 @@ function Footer() {
               href="https://youtube.com/@appifydigital"
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-full bg-white/10 p-3 text-black/80 hover:text-[#ffb300]"
+              className="rounded-full bg-white/10 p-3 text-black/80 hover:text-primary"
             >
               <Youtube className="h-4 w-4" />
               <span className="sr-only">YouTube</span>
@@ -291,7 +291,7 @@ function Footer() {
               href="https://www.instagram.com/appify_digital/"
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-full bg-white/10 p-3 text-black/80 hover:text-[#ffb300]"
+              className="rounded-full bg-white/10 p-3 text-black/80 hover:text-primary"
             >
               <Instagram className="h-4 w-4" />
               <span className="sr-only">Instagram</span>
@@ -300,7 +300,7 @@ function Footer() {
               href="https://tiktok.com/@appify_digital"
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-full bg-white/10 p-3 text-black/80 hover:text-[#ffb300]"
+              className="rounded-full bg-white/10 p-3 text-black/80 hover:text-primary"
             >
               <TikTokIcon />
               <span className="sr-only">TikTok</span>
@@ -309,7 +309,7 @@ function Footer() {
               href="https://www.facebook.com/appify.digital"
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-full bg-white/10 p-3 text-black/80 hover:text-[#ffb300]"
+              className="rounded-full bg-white/10 p-3 text-black/80 hover:text-primary"
             >
               <Facebook className="h-4 w-4" />
               <span className="sr-only">Facebook</span>

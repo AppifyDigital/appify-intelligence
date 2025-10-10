@@ -32,69 +32,80 @@ export default function Home() {
         <div className="absolute inset-0 h-full w-full">
           <video
             autoPlay
-            loop
             muted
             playsInline
             className="absolute inset-0 h-full w-full object-cover"
           >
             <source src="/assets/video/home.mp4" type="video/mp4" />
           </video>
-          {/* Overlay for better text readability */}
-          <div className="absolute inset-0 bg-gradient-to-br from-white/70 via-white/90 to-white/20" />
-        </div>
-
-        {/* Background Decoration */}
-        <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute -right-40 -top-40 h-96 w-96 rounded-full bg-gray-200 opacity-30 blur-3xl" />
-          <div className="absolute -left-40 top-60 h-96 w-96 rounded-full bg-gray-200 opacity-30 blur-3xl" />
-          <div className="absolute bottom-0 right-1/4 h-96 w-96 rounded-full bg-gray-200 opacity-30 blur-3xl" />
+          <div className="absolute inset-0 bg-gradient-to-tl from-white/10 via-white/90 to-white/100" />
         </div>
 
         <div className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 md:py-32 lg:px-20">
           <div className="max-w-4xl">
             {/* Main Heading */}
-            <h1 className="mb-8 text-5xl font-bold leading-tight text-gray-900 md:text-6xl lg:text-7xl">
+            <h1 className="animate-fade-in-up mb-8 text-5xl font-bold leading-tight text-gray-900 md:text-6xl lg:text-7xl">
               BUILDING AI SYSTEMS THAT DELIVER REAL RESULTS.
             </h1>
 
             {/* Subheading */}
-            <p className="mb-6 text-2xl font-medium leading-snug text-yellow-500 md:text-3xl lg:text-4xl">
+            <p className="animate-fade-in-up animation-delay-200 mb-6 text-2xl font-medium leading-snug text-primary md:text-3xl lg:text-4xl">
               At Appify Intelligence, we are Ireland&apos;s specialists in full-stack AI
               development - delivering world-class software.
             </p>
 
             {/* Body Text */}
-            <p className="mb-10 max-w-3xl text-lg leading-relaxed text-gray-700 md:text-xl">
+            <p className="animate-fade-in-up animation-delay-400 mb-10 max-w-3xl text-lg leading-relaxed text-gray-700 md:text-xl">
               From web and mobile development to advanced process automation, we turn
               complex AI into measurable business outcomes.
             </p>
 
             {/* CTA Buttons */}
-            <div className="flex flex-wrap gap-4">
+            <div className="animate-fade-in-up animation-delay-600 flex flex-wrap gap-4">
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center rounded-full bg-gray-900 px-8 py-4 text-base font-medium text-white transition-colors hover:bg-gray-800"
+                className="group relative inline-flex items-center justify-center overflow-hidden rounded-full bg-gray-900 px-8 py-4 text-base font-medium text-white transition-all duration-300 hover:scale-105 hover:bg-gray-800 hover:shadow-xl"
               >
-                Start your AI project
+                <span className="relative z-10">Start your AI project</span>
+                <div className="absolute inset-0 bg-primary opacity-0 transition-opacity duration-300 group-hover:opacity-20"></div>
               </Link>
               <Link
                 // href="/success-stories"
                 href="#success-stories"
-                className="inline-flex items-center justify-center rounded-full border-2 border-gray-900 bg-transparent px-8 py-4 text-base font-medium text-gray-900 transition-colors hover:bg-gray-900 hover:text-white"
+                className="group relative inline-flex items-center justify-center overflow-hidden rounded-full border-2 border-gray-900 bg-transparent px-8 py-4 text-base font-medium text-gray-900 transition-all duration-300 hover:scale-105 hover:bg-gray-900 hover:text-white hover:shadow-xl"
               >
-                See our work
+                <span className="relative z-10">See our work</span>
+                <div className="absolute inset-0 bg-primary opacity-0 transition-opacity duration-300 group-hover:opacity-10"></div>
               </Link>
               <Link
                 // href="/services"
                 href="#services"
-                className="inline-flex items-center justify-center rounded-full border-2 border-gray-900 bg-transparent px-8 py-4 text-base font-medium text-gray-900 transition-colors hover:bg-gray-900 hover:text-white"
+                className="group relative inline-flex items-center justify-center overflow-hidden rounded-full border-2 border-gray-900 bg-transparent px-8 py-4 text-base font-medium text-gray-900 transition-all duration-300 hover:scale-105 hover:bg-gray-900 hover:text-white hover:shadow-xl"
               >
-                Explore services
+                <span className="relative z-10">Explore services</span>
+                <div className="absolute inset-0 bg-primary opacity-0 transition-opacity duration-300 group-hover:opacity-10"></div>
               </Link>
             </div>
           </div>
         </div>
       </section>
+      <div className="overflow-hidden border-b border-t border-black bg-white py-4">
+        <div className="relative">
+          {/* Gradient overlays for fade effect */}
+          <div className="absolute bottom-0 left-0 top-0 z-10 w-32 bg-gradient-to-r from-white to-transparent" />
+          <div className="absolute bottom-0 right-0 top-0 z-10 w-32 bg-gradient-to-l from-white to-transparent" />
+
+          {/* Scrolling container */}
+          <div ref={scrollRef} className="animate-scroll flex gap-8 whitespace-nowrap">
+            {allIndustries.map((industry, index) => (
+              <div key={index} className="inline-flex items-center gap-3 px-6 py-3">
+                <ArrowRight className="h-4 w-4 text-primary" />
+                <span className="text-lg font-medium text-gray-900">{industry}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
 
       {/* AI Services Section */}
       <AIServices />
@@ -190,7 +201,7 @@ export default function Home() {
                 <span className="text-4xl text-gray-400">&rdquo;</span>
               </p>
               <div>
-                <p className="mb-1 text-lg font-bold text-yellow-500">Stephen Gribben</p>
+                <p className="mb-1 text-lg font-bold text-primary">Stephen Gribben</p>
                 <p className="text-gray-600">the owner of Genio</p>
               </div>
             </div>
@@ -227,7 +238,7 @@ export default function Home() {
               </div>
               <div className="p-8">
                 <div className="mb-3">
-                  <span className="text-sm font-semibold uppercase tracking-wide text-yellow-500">
+                  <span className="text-sm font-semibold uppercase tracking-wide text-primary">
                     Global Platform
                   </span>
                 </div>
@@ -264,7 +275,7 @@ export default function Home() {
               </div>
               <div className="p-8">
                 <div className="mb-3">
-                  <span className="text-sm font-semibold uppercase tracking-wide text-yellow-500">
+                  <span className="text-sm font-semibold uppercase tracking-wide text-primary">
                     Agency Tool
                   </span>
                 </div>
@@ -380,13 +391,13 @@ export default function Home() {
           <div>
             <div className="absolute inset-0 overflow-hidden">
               {/* Top border line */}
-              <div className="animate-border-top absolute left-0 top-0 h-1 w-full bg-gradient-to-r from-transparent via-yellow-500 to-transparent opacity-80"></div>
+              <div className="animate-border-top absolute left-0 top-0 h-1 w-full bg-gradient-to-r from-transparent via-primary to-transparent opacity-80"></div>
               {/* Right border line */}
-              <div className="animate-border-right absolute right-0 top-0 h-full w-1 bg-gradient-to-b from-transparent via-yellow-500 to-transparent opacity-80"></div>
+              <div className="animate-border-right absolute right-0 top-0 h-full w-1 bg-gradient-to-b from-transparent via-primary to-transparent opacity-80"></div>
               {/* Bottom border line */}
-              <div className="animate-border-bottom absolute bottom-0 right-0 h-1 w-full bg-gradient-to-l from-transparent via-yellow-500 to-transparent opacity-80"></div>
+              <div className="animate-border-bottom absolute bottom-0 right-0 h-1 w-full bg-gradient-to-l from-transparent via-primary to-transparent opacity-80"></div>
               {/* Left border line */}
-              <div className="animate-border-left absolute bottom-0 left-0 h-full w-1 bg-gradient-to-t from-transparent via-yellow-500 to-transparent opacity-80"></div>
+              <div className="animate-border-left absolute bottom-0 left-0 h-full w-1 bg-gradient-to-t from-transparent via-primary to-transparent opacity-80"></div>
             </div>
             <div className="relative mx-auto max-w-5xl px-4 py-4 text-center sm:px-6 sm:py-10 lg:px-20">
               <h2 className="mb-6 text-4xl font-bold text-gray-900 md:text-5xl">
@@ -407,7 +418,7 @@ export default function Home() {
           </div>
 
           {/* Section 2: Infinite Scrolling Industries */}
-          <div className="overflow-hidden border-b border-t border-black bg-white py-4">
+          <div className="overflow-hidden border-t border-black bg-white py-4">
             <div className="relative">
               {/* Gradient overlays for fade effect */}
               <div className="absolute bottom-0 left-0 top-0 z-10 w-32 bg-gradient-to-r from-white to-transparent" />
@@ -420,7 +431,7 @@ export default function Home() {
               >
                 {allIndustries.map((industry, index) => (
                   <div key={index} className="inline-flex items-center gap-3 px-6 py-3">
-                    <ArrowRight className="h-4 w-4 text-yellow-400" />
+                    <ArrowRight className="h-4 w-4 text-primary" />
                     <span className="text-lg font-medium text-gray-900">{industry}</span>
                   </div>
                 ))}
@@ -438,7 +449,7 @@ export default function Home() {
             <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center rounded-full bg-yellow-500 px-8 py-4 text-lg font-medium text-white transition-colors hover:bg-yellow-600"
+                className="hover:bg-primary/90 inline-flex items-center justify-center rounded-full bg-primary px-8 py-4 text-lg font-medium text-white transition-colors"
               >
                 Contact us
               </Link>

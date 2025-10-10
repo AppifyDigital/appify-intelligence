@@ -1,0 +1,85 @@
+# Appify Intelligence - AI Development Company
+
+## Company Overview
+Appify Intelligence is Ireland's specialist in full-stack AI development, delivering world-class software solutions. We build AI systems that deliver real results across various industries.
+
+## Core Services
+- AI Consulting: Strategic AI consulting, roadmap development, opportunity analysis, implementation planning
+- AI Augmented Web Solutions: AI-powered web development with personalization and automation for smart user experiences
+- AI Chatbots & Agents: Intelligent conversational AI with 24/7 customer support and natural language processing
+- AI Automation: Process automation, workflow optimization, and intelligent task management
+- RAG Systems: Retrieval-Augmented Generation with knowledge base integration and intelligent document processing
+- AI Dashboards: Real-time analytics, predictive insights, and custom reporting solutions
+
+## Industry Expertise
+We implement advanced AI across diverse industries:
+- AI for Healthcare
+- AI for Retail
+- AI for Logistics
+- AI for SME (Small and Medium Enterprises)
+- AI for Enterprise
+- AI for Fitness
+- AI for Sports
+- AI for Finance
+- Training & Education: AI-powered learning platforms that improve student outcomes
+- HR & Recruitment: Smart automation for candidate sourcing, matching, and onboarding
+- Mental Health & Wellbeing: Secure AI apps supporting patients, doctors, and mental health professionals
+
+## In-House AI Products
+
+### AppifyWebX (Global Platform)
+A global, leading-edge web development platform that harnesses AI to deliver high-performance, scalable, secure, production-ready and cost-effective web solutions for clients worldwide within 24 hours.
+
+Key Features:
+- AI-powered development
+- 24-Hour Delivery
+- Production Ready
+- Global reach
+
+### AppifyX (Agency Tool)
+An innovative end-to-end agency management tool designed for creative, media, development, communications, and marketing agencies. Uses AI intelligence to optimize sales, staff resourcing, allocation, capacity management, and profitability.
+
+Key Features:
+- Resource Management
+- AI Intelligence
+- Profit Optimization
+
+## Awards & Recognition
+Appify Intelligence has been shortlisted as finalists for multiple Digital Media Awards:
+- Best App
+- Best Small Agency
+- Best Use of AI
+
+This recognition highlights our demonstrable expertise and leadership in delivering AI-powered solutions that drive real business impact.
+
+## Client Testimonial
+"Appify has developed a strong partnership built upon trust, value, and collaboration. This has then been backed by excellent technical capability." - Stephen Gribben, Owner of Genio
+
+## Why Choose Appify Intelligence
+- Deep AI Expertise
+- Full Service AI Solutions
+- Proven Track Record
+- Global Trust
+- Award Recognition
+
+## Contact Information
+- Website: Contact us to start your AI transformation
+- Location: Ireland
+- Specialization: Full-stack AI development
+
+## Technology Focus
+- AI Systems Development
+- Machine Learning
+- Natural Language Processing
+- Process Automation
+- Web Development
+- Mobile Development
+- Data Analytics
+- Predictive Insights
+- Conversational AI
+- Knowledge Base Integration
+- Document Processing
+- Workflow Optimization
+
+## Mission
+Building AI systems that deliver real results by turning complex AI into measurable business outcomes through strategic consulting, innovative development, and proven implementation.

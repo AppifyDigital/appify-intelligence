@@ -39,7 +39,7 @@ export default function CookieBar() {
         {/* Content */}
         <div className="flex items-start gap-4">
           <div className="flex-shrink-0">
-            <Cookie className="h-8 w-8 text-yellow-500" />
+            <Cookie className="h-8 w-8 text-primary" />
           </div>
           <div className="flex-1 pr-6">
             <h3 className="mb-2 text-lg font-bold text-gray-900">Cookie Notice</h3>
@@ -50,7 +50,7 @@ export default function CookieBar() {
             <div className="flex gap-3">
               <button
                 onClick={handleAccept}
-                className="rounded-full bg-yellow-500 px-6 py-2.5 text-sm font-medium text-white transition-colors hover:bg-yellow-600"
+                className="rounded-full bg-primary px-6 py-2.5 text-sm font-medium text-white transition-colors hover:bg-primary"
               >
                 Accept
               </button>

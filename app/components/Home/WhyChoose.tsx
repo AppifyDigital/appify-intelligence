@@ -117,7 +117,7 @@ export default function WhyChoose() {
                     className="h-full w-full object-cover"
                   />
                   {/* Floating decorative elements */}
-                  <div className="absolute right-4 top-4 h-16 w-16 animate-pulse rounded-full bg-yellow-400 opacity-60 blur-xl" />
+                  <div className="absolute right-4 top-4 h-16 w-16 animate-pulse rounded-full bg-primary opacity-60 blur-xl" />
                   <div className="absolute bottom-8 left-8 h-20 w-20 animate-pulse rounded-full bg-blue-400 opacity-50 blur-xl delay-300" />
                 </div>
 
@@ -141,7 +141,7 @@ export default function WhyChoose() {
                       aria-label="Next slide"
                     >
                       {/* Animated background on hover */}
-                      <div className="absolute inset-0 translate-x-full transform bg-yellow-500 transition-transform duration-300 group-hover:translate-x-0" />
+                      <div className="absolute inset-0 translate-x-full transform bg-primary transition-transform duration-300 group-hover:translate-x-0" />
 
                       <ChevronRight className="relative z-10 h-6 w-6 transform text-white transition-transform duration-300 group-hover:translate-x-1" />
                     </button>

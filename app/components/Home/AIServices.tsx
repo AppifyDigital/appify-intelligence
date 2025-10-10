@@ -105,7 +105,7 @@ export default function AIServices() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-20">
         {/* Section Title */}
         <h2 className="mb-12 text-5xl font-bold text-gray-900 md:text-6xl">
-          AI Services
+          AI services
         </h2>
 
         <div className="flex flex-col gap-8 lg:flex-row">
