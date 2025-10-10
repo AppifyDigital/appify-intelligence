@@ -132,7 +132,7 @@ export default function Contact() {
 
           {/* Right Side - Contact Form */}
           <div className="flex flex-col justify-center">
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-6 sm:mt-20">
               {/* Full Name */}
               <div>
                 <input
@@ -142,7 +142,7 @@ export default function Contact() {
                   onChange={handleChange}
                   placeholder="Full Name"
                   required
-                  className="w-full rounded-xl border-2 border-gray-200 px-6 py-4 text-gray-900 placeholder-gray-400 transition-colors focus:border-primary focus:outline-none"
+                  className="w-full rounded-xl border-2 border-black px-6 py-4 text-gray-900 placeholder-gray-400 transition-colors focus:border-primary focus:outline-none"
                 />
               </div>
 
@@ -155,7 +155,7 @@ export default function Contact() {
                   onChange={handleChange}
                   placeholder="Your Email"
                   required
-                  className="w-full rounded-xl border-2 border-gray-200 px-6 py-4 text-gray-900 placeholder-gray-400 transition-colors focus:border-primary focus:outline-none"
+                  className="w-full rounded-xl border-2 border-black px-6 py-4 text-gray-900 placeholder-gray-400 transition-colors focus:border-primary focus:outline-none"
                 />
               </div>
 
@@ -167,7 +167,7 @@ export default function Contact() {
                   value={formData.company}
                   onChange={handleChange}
                   placeholder="Company Name"
-                  className="w-full rounded-xl border-2 border-gray-200 px-6 py-4 text-gray-900 placeholder-gray-400 transition-colors focus:border-primary focus:outline-none"
+                  className="w-full rounded-xl border-2 border-black px-6 py-4 text-gray-900 placeholder-gray-400 transition-colors focus:border-primary focus:outline-none"
                 />
               </div>
 
@@ -196,7 +196,7 @@ export default function Contact() {
                   placeholder="Tell us about your AI project..."
                   required
                   rows={6}
-                  className="w-full resize-none rounded-xl border-2 border-gray-200 px-6 py-4 text-gray-900 placeholder-gray-400 transition-colors focus:border-primary focus:outline-none"
+                  className="w-full resize-none rounded-xl border-2 border-black px-6 py-4 text-gray-900 placeholder-gray-400 transition-colors focus:border-primary focus:outline-none"
                 />
               </div>
 

@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useRef } from "react";
+import { useRef, useEffect, useState } from "react";
 import WhyChoose from "../components/Home/WhyChoose";
 import AIServices from "../components/Home/AIServices";
 import Image from "next/image";
@@ -19,10 +19,40 @@ const industries = [
 ];
 
 // Duplicate industries for seamless loop
-const allIndustries = [...industries, ...industries];
+const allIndustries = [
+  ...industries,
+  ...industries,
+  ...industries,
+  ...industries,
+  ...industries,
+];
 
 export default function Home() {
   const scrollRef = useRef<HTMLDivElement>(null);
+  const [visibleElements, setVisibleElements] = useState<Set<string>>(new Set());
+
+  // Intersection Observer for scroll-triggered animations
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setVisibleElements((prev) => new Set(prev).add(entry.target.id));
+          }
+        });
+      },
+      {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px",
+      },
+    );
+
+    // Observe all elements with animation classes
+    const animatedElements = document.querySelectorAll("[data-animate]");
+    animatedElements.forEach((el) => observer.observe(el));
+
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <main className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100">
@@ -115,10 +145,26 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-20">
           {/* Section Header */}
           <div className="mb-12 text-center">
-            <h2 className="mb-4 text-4xl font-bold text-gray-900 md:text-5xl">
+            <h2
+              id="expertise-title"
+              data-animate
+              className={`duration-800 mb-4 text-4xl font-bold text-gray-900 transition-all md:text-5xl ${
+                visibleElements.has("expertise-title")
+                  ? "animate-fade-in-up"
+                  : "translate-y-8 opacity-0"
+              }`}
+            >
               AI expertise across industries
             </h2>
-            <p className="mx-auto max-w-3xl text-lg text-gray-600">
+            <p
+              id="expertise-desc"
+              data-animate
+              className={`duration-800 mx-auto max-w-3xl text-lg text-gray-600 transition-all delay-200 ${
+                visibleElements.has("expertise-desc")
+                  ? "animate-fade-in-up"
+                  : "translate-y-8 opacity-0"
+              }`}
+            >
               We implement advanced AI across diverse industries, helping organisations
               achieve measurable improvements.
             </p>
@@ -127,14 +173,22 @@ export default function Home() {
           {/* Industry Cards */}
           <div className="mb-16 grid grid-cols-1 gap-6 md:grid-cols-3">
             {/* Training & Education Card */}
-            <div className="overflow-hidden rounded-xl bg-white shadow-sm transition-shadow hover:shadow-md">
+            <div
+              id="card-1"
+              data-animate
+              className={`overflow-hidden rounded-xl bg-white shadow-sm transition-all duration-300 hover:scale-105 hover:shadow-lg ${
+                visibleElements.has("card-1")
+                  ? "animate-fade-in-up"
+                  : "translate-y-8 opacity-0"
+              }`}
+            >
               <div className="relative h-48 overflow-hidden">
                 <Image
                   width={500}
                   height={500}
                   src="/assets/images/home/Training_&_education.png"
                   alt="Training & education"
-                  className="h-full w-full object-cover"
+                  className="h-full w-full object-cover transition-transform duration-300 hover:scale-110"
                 />
               </div>
               <div className="p-6">
@@ -149,14 +203,22 @@ export default function Home() {
             </div>
 
             {/* HR & Recruitment Card */}
-            <div className="overflow-hidden rounded-xl bg-white shadow-sm transition-shadow hover:shadow-md">
+            <div
+              id="card-2"
+              data-animate
+              className={`overflow-hidden rounded-xl bg-white shadow-sm transition-all duration-300 hover:scale-105 hover:shadow-lg ${
+                visibleElements.has("card-2")
+                  ? "animate-fade-in-up"
+                  : "translate-y-8 opacity-0"
+              }`}
+            >
               <div className="relative h-48 overflow-hidden">
                 <Image
                   width={500}
                   height={500}
                   src="/assets/images/home/HR_&_recruitment.png"
                   alt="HR & recruitment"
-                  className="h-full w-full object-cover"
+                  className="h-full w-full object-cover transition-transform duration-300 hover:scale-110"
                 />
               </div>
               <div className="p-6">
@@ -168,14 +230,22 @@ export default function Home() {
             </div>
 
             {/* Mental Health & Wellbeing Card */}
-            <div className="overflow-hidden rounded-xl bg-white shadow-sm transition-shadow hover:shadow-md">
+            <div
+              id="card-3"
+              data-animate
+              className={`overflow-hidden rounded-xl bg-white shadow-sm transition-all duration-300 hover:scale-105 hover:shadow-lg ${
+                visibleElements.has("card-3")
+                  ? "animate-fade-in-up"
+                  : "translate-y-8 opacity-0"
+              }`}
+            >
               <div className="relative h-48 overflow-hidden">
                 <Image
                   width={500}
                   height={500}
                   src="/assets/images/home/Mental_health_&_wellbeing.png"
                   alt="Mental health & wellbeing"
-                  className="h-full w-full object-cover"
+                  className="h-full w-full object-cover transition-transform duration-300 hover:scale-110"
                 />
               </div>
               <div className="p-6">
@@ -191,7 +261,15 @@ export default function Home() {
           </div>
 
           {/* Testimonial */}
-          <div className="mx-auto max-w-4xl text-center">
+          <div
+            id="testimonial"
+            data-animate
+            className={`duration-800 delay-400 mx-auto max-w-4xl text-center transition-all ${
+              visibleElements.has("testimonial")
+                ? "animate-fade-in-up"
+                : "translate-y-8 opacity-0"
+            }`}
+          >
             <div className="relative">
               <p className="mb-6 text-xl leading-relaxed text-gray-800 md:text-2xl">
                 <span className="text-4xl text-gray-400">&ldquo;</span>
@@ -214,10 +292,26 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-20">
           {/* Section Header */}
           <div className="mb-12 text-center">
-            <h2 className="mb-4 text-4xl font-bold text-gray-900 md:text-5xl">
+            <h2
+              id="products-title"
+              data-animate
+              className={`duration-800 mb-4 text-4xl font-bold text-gray-900 transition-all md:text-5xl ${
+                visibleElements.has("products-title")
+                  ? "animate-fade-in-up"
+                  : "translate-y-8 opacity-0"
+              }`}
+            >
               In-house AI product innovation
             </h2>
-            <p className="mx-auto max-w-3xl text-lg text-gray-600">
+            <p
+              id="products-desc"
+              data-animate
+              className={`duration-800 mx-auto max-w-3xl text-lg text-gray-600 transition-all delay-200 ${
+                visibleElements.has("products-desc")
+                  ? "animate-fade-in-up"
+                  : "translate-y-8 opacity-0"
+              }`}
+            >
               Appify Intelligence is at the forefront of AI product development, with two
               flagship solutions
             </p>
@@ -226,14 +320,22 @@ export default function Home() {
           {/* Product Cards */}
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
             {/* AppifyWebX Card */}
-            <div className="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition-shadow hover:shadow-lg">
+            <div
+              id="product-1"
+              data-animate
+              className={`overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:scale-105 hover:shadow-xl ${
+                visibleElements.has("product-1")
+                  ? "animate-fade-in-up"
+                  : "translate-y-8 opacity-0"
+              }`}
+            >
               <div className="relative h-64 overflow-hidden">
                 <Image
                   width={500}
                   height={500}
                   src="/assets/images/home/AppifyWebX_image.png"
                   alt="AppifyWebX Global Platform"
-                  className="h-full w-full object-cover"
+                  className="h-full w-full object-cover transition-transform duration-300 hover:scale-110"
                 />
               </div>
               <div className="p-8">
@@ -249,13 +351,13 @@ export default function Home() {
                   cost-effective web solutions for clients worldwide, within 24 hours.
                 </p>
                 <div className="flex flex-wrap gap-3">
-                  <span className="rounded-full border-2 border-gray-900 px-4 py-2 text-sm font-medium text-gray-900">
+                  <span className="rounded-full border-2 border-gray-900 px-4 py-2 text-sm font-medium text-gray-900 transition-colors hover:bg-gray-900 hover:text-white">
                     AI-powered
                   </span>
-                  <span className="rounded-full border-2 border-gray-900 px-4 py-2 text-sm font-medium text-gray-900">
+                  <span className="rounded-full border-2 border-gray-900 px-4 py-2 text-sm font-medium text-gray-900 transition-colors hover:bg-gray-900 hover:text-white">
                     24-Hour Delivery
                   </span>
-                  <span className="rounded-full border-2 border-gray-900 px-4 py-2 text-sm font-medium text-gray-900">
+                  <span className="rounded-full border-2 border-gray-900 px-4 py-2 text-sm font-medium text-gray-900 transition-colors hover:bg-gray-900 hover:text-white">
                     Production Ready
                   </span>
                 </div>
@@ -263,14 +365,22 @@ export default function Home() {
             </div>
 
             {/* AppifyX Card */}
-            <div className="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition-shadow hover:shadow-lg">
+            <div
+              id="product-2"
+              data-animate
+              className={`overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:scale-105 hover:shadow-xl ${
+                visibleElements.has("product-2")
+                  ? "animate-fade-in-up"
+                  : "translate-y-8 opacity-0"
+              }`}
+            >
               <div className="relative h-64 overflow-hidden">
                 <Image
                   width={500}
                   height={500}
                   src="/assets/images/home/AppifyX_image.png"
                   alt="AppifyX Agency Tool"
-                  className="h-full w-full object-cover"
+                  className="h-full w-full object-cover transition-transform duration-300 hover:scale-110"
                 />
               </div>
               <div className="p-8">
@@ -287,13 +397,13 @@ export default function Home() {
                   management, and profitability.
                 </p>
                 <div className="flex flex-wrap gap-3">
-                  <span className="rounded-full border-2 border-gray-900 px-4 py-2 text-sm font-medium text-gray-900">
+                  <span className="rounded-full border-2 border-gray-900 px-4 py-2 text-sm font-medium text-gray-900 transition-colors hover:bg-gray-900 hover:text-white">
                     Resource Management
                   </span>
-                  <span className="rounded-full border-2 border-gray-900 px-4 py-2 text-sm font-medium text-gray-900">
+                  <span className="rounded-full border-2 border-gray-900 px-4 py-2 text-sm font-medium text-gray-900 transition-colors hover:bg-gray-900 hover:text-white">
                     AI Intelligence
                   </span>
-                  <span className="rounded-full border-2 border-gray-900 px-4 py-2 text-sm font-medium text-gray-900">
+                  <span className="rounded-full border-2 border-gray-900 px-4 py-2 text-sm font-medium text-gray-900 transition-colors hover:bg-gray-900 hover:text-white">
                     Profit Optimisation
                   </span>
                 </div>
@@ -308,13 +418,37 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-20">
           {/* Section Header */}
           <div className="mb-8 text-center">
-            <h2 className="mb-6 text-4xl font-bold text-gray-900 md:text-5xl">
+            <h2
+              id="awards-title"
+              data-animate
+              className={`duration-800 mb-6 text-4xl font-bold text-gray-900 transition-all md:text-5xl ${
+                visibleElements.has("awards-title")
+                  ? "animate-fade-in-up"
+                  : "translate-y-8 opacity-0"
+              }`}
+            >
               Award-winning AI expertise
             </h2>
-            <p className="mb-4 text-xl font-semibold text-gray-900">
+            <p
+              id="awards-subtitle"
+              data-animate
+              className={`duration-800 mb-4 text-xl font-semibold text-gray-900 transition-all delay-200 ${
+                visibleElements.has("awards-subtitle")
+                  ? "animate-fade-in-up"
+                  : "translate-y-8 opacity-0"
+              }`}
+            >
               Our commitment to AI innovation has been recognized at the highest level
             </p>
-            <p className="mx-auto max-w-4xl text-lg text-gray-600">
+            <p
+              id="awards-desc"
+              data-animate
+              className={`duration-800 delay-400 mx-auto max-w-4xl text-lg text-gray-600 transition-all ${
+                visibleElements.has("awards-desc")
+                  ? "animate-fade-in-up"
+                  : "translate-y-8 opacity-0"
+              }`}
+            >
               Appify Intelligence is proud to be shortlisted as finalists for multiple
               Digital Media Awards, including:
             </p>
@@ -323,7 +457,15 @@ export default function Home() {
           {/* Awards Cards */}
           <div className="mx-auto mb-12 grid max-w-5xl grid-cols-1 gap-6 md:grid-cols-3">
             {/* Best App Award */}
-            <div className="rounded-xl bg-white p-8 text-center shadow-sm transition-shadow hover:shadow-md">
+            <div
+              id="award-1"
+              data-animate
+              className={`rounded-xl bg-white p-8 text-center shadow-sm transition-all duration-300 hover:scale-105 hover:shadow-lg ${
+                visibleElements.has("award-1")
+                  ? "animate-fade-in-up"
+                  : "translate-y-8 opacity-0"
+              }`}
+            >
               <div className="mb-4 flex justify-center">
                 <div className="flex h-16 w-32 items-center justify-center">
                   <Image
@@ -331,7 +473,7 @@ export default function Home() {
                     height={500}
                     src="/assets/images/home/digital_media_awards.png"
                     alt="Best App"
-                    className="h-full w-full object-cover"
+                    className="h-full w-full object-cover transition-transform duration-300 hover:scale-110"
                   />
                 </div>
               </div>
@@ -339,7 +481,15 @@ export default function Home() {
             </div>
 
             {/* Best Small Agency Award */}
-            <div className="rounded-xl bg-white p-8 text-center shadow-sm transition-shadow hover:shadow-md">
+            <div
+              id="award-2"
+              data-animate
+              className={`rounded-xl bg-white p-8 text-center shadow-sm transition-all duration-300 hover:scale-105 hover:shadow-lg ${
+                visibleElements.has("award-2")
+                  ? "animate-fade-in-up"
+                  : "translate-y-8 opacity-0"
+              }`}
+            >
               <div className="mb-4 flex justify-center">
                 <div className="flex h-16 w-32 items-center justify-center">
                   <Image
@@ -347,7 +497,7 @@ export default function Home() {
                     height={500}
                     src="/assets/images/home/digital_media_awards.png"
                     alt="Best Small Agency"
-                    className="h-full w-full object-cover"
+                    className="h-full w-full object-cover transition-transform duration-300 hover:scale-110"
                   />
                 </div>
               </div>
@@ -355,7 +505,15 @@ export default function Home() {
             </div>
 
             {/* Best Use of AI Award */}
-            <div className="rounded-xl bg-white p-8 text-center shadow-sm transition-shadow hover:shadow-md">
+            <div
+              id="award-3"
+              data-animate
+              className={`rounded-xl bg-white p-8 text-center shadow-sm transition-all duration-300 hover:scale-105 hover:shadow-lg ${
+                visibleElements.has("award-3")
+                  ? "animate-fade-in-up"
+                  : "translate-y-8 opacity-0"
+              }`}
+            >
               <div className="mb-4 flex justify-center">
                 <div className="flex h-16 w-32 items-center justify-center">
                   <Image
@@ -363,7 +521,7 @@ export default function Home() {
                     height={500}
                     src="/assets/images/home/digital_media_awards.png"
                     alt="Best Use of AI"
-                    className="h-full w-full object-cover"
+                    className="h-full w-full object-cover transition-transform duration-300 hover:scale-110"
                   />
                 </div>
               </div>
@@ -372,7 +530,15 @@ export default function Home() {
           </div>
 
           {/* Closing Statement */}
-          <div className="mx-auto max-w-4xl text-center">
+          <div
+            id="awards-closing"
+            data-animate
+            className={`duration-800 delay-400 mx-auto max-w-4xl text-center transition-all ${
+              visibleElements.has("awards-closing")
+                ? "animate-fade-in-up"
+                : "translate-y-8 opacity-0"
+            }`}
+          >
             <p className="text-lg leading-relaxed text-gray-600">
               This recognition highlights our demonstrable expertise and leadership in
               delivering AI-powered solutions that drive real business impact.
@@ -400,17 +566,39 @@ export default function Home() {
               <div className="animate-border-left absolute bottom-0 left-0 h-full w-1 bg-gradient-to-t from-transparent via-primary to-transparent opacity-80"></div>
             </div>
             <div className="relative mx-auto max-w-5xl px-4 py-4 text-center sm:px-6 sm:py-10 lg:px-20">
-              <h2 className="mb-6 text-4xl font-bold text-gray-900 md:text-5xl">
+              <h2
+                id="solutions-title"
+                data-animate
+                className={`duration-800 mb-6 text-4xl font-bold text-gray-900 transition-all md:text-5xl ${
+                  visibleElements.has("solutions-title")
+                    ? "animate-fade-in-up"
+                    : "translate-y-8 opacity-0"
+                }`}
+              >
                 See our AI solutions in action
               </h2>
-              <p className="mx-auto mb-8 max-w-3xl text-lg text-gray-600">
+              <p
+                id="solutions-desc"
+                data-animate
+                className={`duration-800 mx-auto mb-8 max-w-3xl text-lg text-gray-600 transition-all delay-200 ${
+                  visibleElements.has("solutions-desc")
+                    ? "animate-fade-in-up"
+                    : "translate-y-8 opacity-0"
+                }`}
+              >
                 Explore real-world implementations and the results we&apos;ve delivered
                 for clients across various industries.
               </p>
               <Link
                 // href="/success-stories"
                 href="#success-stories"
-                className="inline-flex items-center justify-center rounded-full bg-gray-900 px-8 py-4 text-base font-medium text-white transition-colors hover:bg-gray-800"
+                id="solutions-button"
+                data-animate
+                className={`inline-flex items-center justify-center rounded-full bg-gray-900 px-8 py-4 text-base font-medium text-white transition-all duration-300 hover:scale-105 hover:bg-gray-800 hover:shadow-lg ${
+                  visibleElements.has("solutions-button")
+                    ? "animate-fade-in-up"
+                    : "translate-y-8 opacity-0"
+                }`}
               >
                 View success stories
               </Link>
@@ -443,17 +631,34 @@ export default function Home() {
         {/* Section 3: Contact CTA */}
         <section className="bg-white py-20">
           <div className="mx-auto max-w-5xl px-4 text-center sm:px-6 lg:px-20">
-            <h2 className="mb-6 text-4xl font-bold text-gray-900 md:text-5xl">
-              Let&apos;s make your business intelligent.
+            <h2
+              id="contact-title"
+              data-animate
+              className={`duration-800 mb-6 text-4xl font-bold text-gray-900 transition-all md:text-5xl ${
+                visibleElements.has("contact-title")
+                  ? "animate-fade-in-up"
+                  : "translate-y-8 opacity-0"
+              }`}
+            >
+              Let&apos;s make your business{" "}
+              <span className="border-b-4 border-black">intelligent</span>.
             </h2>
-            <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
+            <div
+              id="contact-cta"
+              data-animate
+              className={`duration-800 flex flex-col items-center justify-center gap-4 transition-all delay-200 sm:flex-row ${
+                visibleElements.has("contact-cta")
+                  ? "animate-fade-in-up"
+                  : "translate-y-8 opacity-0"
+              }`}
+            >
               <Link
                 href="/contact"
-                className="hover:bg-primary/90 inline-flex items-center justify-center rounded-full bg-primary px-8 py-4 text-lg font-medium text-white transition-colors"
+                className="hover:bg-primary/90 inline-flex items-center justify-center rounded-full bg-primary px-8 py-4 text-2xl font-medium text-black transition-all duration-300 hover:scale-105 hover:shadow-lg"
               >
                 Contact us
               </Link>
-              <span className="text-lg text-gray-700">
+              <span className="text-2xl text-gray-700">
                 to start your AI transformation.
               </span>
             </div>

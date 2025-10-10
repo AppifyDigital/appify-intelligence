@@ -34,20 +34,20 @@ function Footer() {
               className="h-12 w-auto"
             />
           </Link>
-          <Link href="/" className="transition-colors hover:text-primary">
+          <Link href="/#home" className="transition-colors hover:text-primary">
             Home
           </Link>
-          <Link href="/case-studies" className="transition-colors hover:text-primary">
-            Case Studies
+          <Link href="/#services" className="transition-colors hover:text-primary">
+            Services
           </Link>
-          <Link href="/blog" className="transition-colors hover:text-primary">
-            Explore Our Blog
+          <Link href="/#expertise" className="transition-colors hover:text-primary">
+            Expertise
           </Link>
-          <Link href="/resources" className="transition-colors hover:text-primary">
-            Resources
+          <Link href="/#products" className="transition-colors hover:text-primary">
+            Products
           </Link>
-          <Link href="/faq" className="transition-colors hover:text-primary">
-            FAQ
+          <Link href="/#success-stories" className="transition-colors hover:text-primary">
+            Success Stories
           </Link>
           <Link href="/contact" className="text-primary hover:text-primary">
             Contact us
