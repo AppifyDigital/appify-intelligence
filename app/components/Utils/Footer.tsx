@@ -18,7 +18,7 @@ const TikTokIcon = () => (
 
 function Footer() {
   return (
-    <footer className="bg-white pb-12 text-black border-t border-black/10">
+    <footer className="border-t border-black/10 bg-white pb-12 text-black">
       <div className="container mx-auto space-y-8 px-4 sm:space-y-12">
         {/* Logo Section */}
         <div className="flex justify-center"></div>
