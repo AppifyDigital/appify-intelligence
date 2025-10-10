@@ -1,0 +1,454 @@
+"use client";
+
+import Link from "next/link";
+import { useRef } from "react";
+import WhyChoose from "../components/Home/WhyChoose";
+import AIServices from "../components/Home/AIServices";
+import Image from "next/image";
+import { ArrowRight } from "lucide-react";
+
+const industries = [
+  "AI for Healthcare",
+  "AI for Retail",
+  "AI for Logistics",
+  "AI for SME",
+  "AI for Enterprise",
+  "AI for Fitness",
+  "AI for Sports",
+  "AI for Finance",
+];
+
+// Duplicate industries for seamless loop
+const allIndustries = [...industries, ...industries];
+
+export default function Home() {
+  const scrollRef = useRef<HTMLDivElement>(null);
+
+  return (
+    <main className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100">
+      {/* Hero Section */}
+      <section id="home" className="relative overflow-hidden">
+        {/* Video Background */}
+        <div className="absolute inset-0 h-full w-full">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="absolute inset-0 h-full w-full object-cover"
+          >
+            <source src="/assets/video/home.mp4" type="video/mp4" />
+          </video>
+          {/* Overlay for better text readability */}
+          <div className="absolute inset-0 bg-gradient-to-br from-white/70 via-white/90 to-white/20" />
+        </div>
+
+        {/* Background Decoration */}
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute -right-40 -top-40 h-96 w-96 rounded-full bg-gray-200 opacity-30 blur-3xl" />
+          <div className="absolute -left-40 top-60 h-96 w-96 rounded-full bg-gray-200 opacity-30 blur-3xl" />
+          <div className="absolute bottom-0 right-1/4 h-96 w-96 rounded-full bg-gray-200 opacity-30 blur-3xl" />
+        </div>
+
+        <div className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 md:py-32 lg:px-20">
+          <div className="max-w-4xl">
+            {/* Main Heading */}
+            <h1 className="mb-8 text-5xl font-bold leading-tight text-gray-900 md:text-6xl lg:text-7xl">
+              BUILDING AI SYSTEMS THAT DELIVER REAL RESULTS.
+            </h1>
+
+            {/* Subheading */}
+            <p className="mb-6 text-2xl font-medium leading-snug text-yellow-500 md:text-3xl lg:text-4xl">
+              At Appify Intelligence, we are Ireland&apos;s specialists in full-stack AI
+              development - delivering world-class software.
+            </p>
+
+            {/* Body Text */}
+            <p className="mb-10 max-w-3xl text-lg leading-relaxed text-gray-700 md:text-xl">
+              From web and mobile development to advanced process automation, we turn
+              complex AI into measurable business outcomes.
+            </p>
+
+            {/* CTA Buttons */}
+            <div className="flex flex-wrap gap-4">
+              <Link
+                href="/contact"
+                className="inline-flex items-center justify-center rounded-full bg-gray-900 px-8 py-4 text-base font-medium text-white transition-colors hover:bg-gray-800"
+              >
+                Start your AI project
+              </Link>
+              <Link
+                // href="/success-stories"
+                href="#success-stories"
+                className="inline-flex items-center justify-center rounded-full border-2 border-gray-900 bg-transparent px-8 py-4 text-base font-medium text-gray-900 transition-colors hover:bg-gray-900 hover:text-white"
+              >
+                See our work
+              </Link>
+              <Link
+                // href="/services"
+                href="#services"
+                className="inline-flex items-center justify-center rounded-full border-2 border-gray-900 bg-transparent px-8 py-4 text-base font-medium text-gray-900 transition-colors hover:bg-gray-900 hover:text-white"
+              >
+                Explore services
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* AI Services Section */}
+      <AIServices />
+
+      {/* AI Expertise Across Industries Section */}
+      <section id="expertise" className="bg-gray-50 py-20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-20">
+          {/* Section Header */}
+          <div className="mb-12 text-center">
+            <h2 className="mb-4 text-4xl font-bold text-gray-900 md:text-5xl">
+              AI expertise across industries
+            </h2>
+            <p className="mx-auto max-w-3xl text-lg text-gray-600">
+              We implement advanced AI across diverse industries, helping organisations
+              achieve measurable improvements.
+            </p>
+          </div>
+
+          {/* Industry Cards */}
+          <div className="mb-16 grid grid-cols-1 gap-6 md:grid-cols-3">
+            {/* Training & Education Card */}
+            <div className="overflow-hidden rounded-xl bg-white shadow-sm transition-shadow hover:shadow-md">
+              <div className="relative h-48 overflow-hidden">
+                <Image
+                  width={500}
+                  height={500}
+                  src="/assets/images/home/Training_&_education.png"
+                  alt="Training & education"
+                  className="h-full w-full object-cover"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="mb-3 text-xl font-bold text-gray-900">
+                  Training & education
+                </h3>
+                <p className="leading-relaxed text-gray-600">
+                  AI-powered learning platforms that improve student outcomes and learning
+                  efficiency.
+                </p>
+              </div>
+            </div>
+
+            {/* HR & Recruitment Card */}
+            <div className="overflow-hidden rounded-xl bg-white shadow-sm transition-shadow hover:shadow-md">
+              <div className="relative h-48 overflow-hidden">
+                <Image
+                  width={500}
+                  height={500}
+                  src="/assets/images/home/HR_&_recruitment.png"
+                  alt="HR & recruitment"
+                  className="h-full w-full object-cover"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="mb-3 text-xl font-bold text-gray-900">HR & recruitment</h3>
+                <p className="leading-relaxed text-gray-600">
+                  Smart automation for candidate sourcing, matching, and onboarding.
+                </p>
+              </div>
+            </div>
+
+            {/* Mental Health & Wellbeing Card */}
+            <div className="overflow-hidden rounded-xl bg-white shadow-sm transition-shadow hover:shadow-md">
+              <div className="relative h-48 overflow-hidden">
+                <Image
+                  width={500}
+                  height={500}
+                  src="/assets/images/home/Mental_health_&_wellbeing.png"
+                  alt="Mental health & wellbeing"
+                  className="h-full w-full object-cover"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="mb-3 text-xl font-bold text-gray-900">
+                  Mental health & wellbeing
+                </h3>
+                <p className="leading-relaxed text-gray-600">
+                  Secure AI apps that support patients, doctors, mental health
+                  professionals and all other users.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Testimonial */}
+          <div className="mx-auto max-w-4xl text-center">
+            <div className="relative">
+              <p className="mb-6 text-xl leading-relaxed text-gray-800 md:text-2xl">
+                <span className="text-4xl text-gray-400">&ldquo;</span>
+                Appify has developed a strong partnership built upon trust, value, and
+                collaboration. This has then been backed by excellent technical
+                capability.
+                <span className="text-4xl text-gray-400">&rdquo;</span>
+              </p>
+              <div>
+                <p className="mb-1 text-lg font-bold text-yellow-500">Stephen Gribben</p>
+                <p className="text-gray-600">the owner of Genio</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* In-house AI Product Innovation Section */}
+      <section id="products" className="bg-white py-20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-20">
+          {/* Section Header */}
+          <div className="mb-12 text-center">
+            <h2 className="mb-4 text-4xl font-bold text-gray-900 md:text-5xl">
+              In-house AI product innovation
+            </h2>
+            <p className="mx-auto max-w-3xl text-lg text-gray-600">
+              Appify Intelligence is at the forefront of AI product development, with two
+              flagship solutions
+            </p>
+          </div>
+
+          {/* Product Cards */}
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
+            {/* AppifyWebX Card */}
+            <div className="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition-shadow hover:shadow-lg">
+              <div className="relative h-64 overflow-hidden">
+                <Image
+                  width={500}
+                  height={500}
+                  src="/assets/images/home/AppifyWebX_image.png"
+                  alt="AppifyWebX Global Platform"
+                  className="h-full w-full object-cover"
+                />
+              </div>
+              <div className="p-8">
+                <div className="mb-3">
+                  <span className="text-sm font-semibold uppercase tracking-wide text-yellow-500">
+                    Global Platform
+                  </span>
+                </div>
+                <h3 className="mb-4 text-3xl font-bold text-gray-900">AppifyWebX</h3>
+                <p className="mb-6 leading-relaxed text-gray-600">
+                  A global, leading-edge web development platform, harnessing AI to
+                  deliver high-performance, scalable, secure, production-ready and
+                  cost-effective web solutions for clients worldwide, within 24 hours.
+                </p>
+                <div className="flex flex-wrap gap-3">
+                  <span className="rounded-full border-2 border-gray-900 px-4 py-2 text-sm font-medium text-gray-900">
+                    AI-powered
+                  </span>
+                  <span className="rounded-full border-2 border-gray-900 px-4 py-2 text-sm font-medium text-gray-900">
+                    24-Hour Delivery
+                  </span>
+                  <span className="rounded-full border-2 border-gray-900 px-4 py-2 text-sm font-medium text-gray-900">
+                    Production Ready
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            {/* AppifyX Card */}
+            <div className="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition-shadow hover:shadow-lg">
+              <div className="relative h-64 overflow-hidden">
+                <Image
+                  width={500}
+                  height={500}
+                  src="/assets/images/home/AppifyX_image.png"
+                  alt="AppifyX Agency Tool"
+                  className="h-full w-full object-cover"
+                />
+              </div>
+              <div className="p-8">
+                <div className="mb-3">
+                  <span className="text-sm font-semibold uppercase tracking-wide text-yellow-500">
+                    Agency Tool
+                  </span>
+                </div>
+                <h3 className="mb-4 text-3xl font-bold text-gray-900">AppifyX</h3>
+                <p className="mb-6 leading-relaxed text-gray-600">
+                  An innovative end-to-end agency management tool designed for creative,
+                  media, development, communications, and marketing agencies. Uses AI
+                  intelligence to optimize sales, staff resourcing, allocation, capacity
+                  management, and profitability.
+                </p>
+                <div className="flex flex-wrap gap-3">
+                  <span className="rounded-full border-2 border-gray-900 px-4 py-2 text-sm font-medium text-gray-900">
+                    Resource Management
+                  </span>
+                  <span className="rounded-full border-2 border-gray-900 px-4 py-2 text-sm font-medium text-gray-900">
+                    AI Intelligence
+                  </span>
+                  <span className="rounded-full border-2 border-gray-900 px-4 py-2 text-sm font-medium text-gray-900">
+                    Profit Optimisation
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Award-winning AI Expertise Section */}
+      <section className="bg-gray-50 py-20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-20">
+          {/* Section Header */}
+          <div className="mb-8 text-center">
+            <h2 className="mb-6 text-4xl font-bold text-gray-900 md:text-5xl">
+              Award-winning AI expertise
+            </h2>
+            <p className="mb-4 text-xl font-semibold text-gray-900">
+              Our commitment to AI innovation has been recognized at the highest level
+            </p>
+            <p className="mx-auto max-w-4xl text-lg text-gray-600">
+              Appify Intelligence is proud to be shortlisted as finalists for multiple
+              Digital Media Awards, including:
+            </p>
+          </div>
+
+          {/* Awards Cards */}
+          <div className="mx-auto mb-12 grid max-w-5xl grid-cols-1 gap-6 md:grid-cols-3">
+            {/* Best App Award */}
+            <div className="rounded-xl bg-white p-8 text-center shadow-sm transition-shadow hover:shadow-md">
+              <div className="mb-4 flex justify-center">
+                <div className="flex h-16 w-32 items-center justify-center">
+                  <Image
+                    width={500}
+                    height={500}
+                    src="/assets/images/home/digital_media_awards.png"
+                    alt="Best App"
+                    className="h-full w-full object-cover"
+                  />
+                </div>
+              </div>
+              <h3 className="text-lg font-bold text-gray-900">Best App</h3>
+            </div>
+
+            {/* Best Small Agency Award */}
+            <div className="rounded-xl bg-white p-8 text-center shadow-sm transition-shadow hover:shadow-md">
+              <div className="mb-4 flex justify-center">
+                <div className="flex h-16 w-32 items-center justify-center">
+                  <Image
+                    width={500}
+                    height={500}
+                    src="/assets/images/home/digital_media_awards.png"
+                    alt="Best Small Agency"
+                    className="h-full w-full object-cover"
+                  />
+                </div>
+              </div>
+              <h3 className="text-lg font-bold text-gray-900">Best Small Agency</h3>
+            </div>
+
+            {/* Best Use of AI Award */}
+            <div className="rounded-xl bg-white p-8 text-center shadow-sm transition-shadow hover:shadow-md">
+              <div className="mb-4 flex justify-center">
+                <div className="flex h-16 w-32 items-center justify-center">
+                  <Image
+                    width={500}
+                    height={500}
+                    src="/assets/images/home/digital_media_awards.png"
+                    alt="Best Use of AI"
+                    className="h-full w-full object-cover"
+                  />
+                </div>
+              </div>
+              <h3 className="text-lg font-bold text-gray-900">Best Use of AI</h3>
+            </div>
+          </div>
+
+          {/* Closing Statement */}
+          <div className="mx-auto max-w-4xl text-center">
+            <p className="text-lg leading-relaxed text-gray-600">
+              This recognition highlights our demonstrable expertise and leadership in
+              delivering AI-powered solutions that drive real business impact.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Section */}
+      <WhyChoose />
+
+      {/* Solutions In Action Section */}
+      <div className="bg-white py-20">
+        {/* Section 1: See our AI solutions in action */}
+        <section className="container relative mx-auto border border-gray-200 shadow-lg">
+          <div>
+            <div className="absolute inset-0 overflow-hidden">
+              {/* Top border line */}
+              <div className="animate-border-top absolute left-0 top-0 h-1 w-full bg-gradient-to-r from-transparent via-yellow-500 to-transparent opacity-80"></div>
+              {/* Right border line */}
+              <div className="animate-border-right absolute right-0 top-0 h-full w-1 bg-gradient-to-b from-transparent via-yellow-500 to-transparent opacity-80"></div>
+              {/* Bottom border line */}
+              <div className="animate-border-bottom absolute bottom-0 right-0 h-1 w-full bg-gradient-to-l from-transparent via-yellow-500 to-transparent opacity-80"></div>
+              {/* Left border line */}
+              <div className="animate-border-left absolute bottom-0 left-0 h-full w-1 bg-gradient-to-t from-transparent via-yellow-500 to-transparent opacity-80"></div>
+            </div>
+            <div className="relative mx-auto max-w-5xl px-4 py-4 text-center sm:px-6 sm:py-10 lg:px-20">
+              <h2 className="mb-6 text-4xl font-bold text-gray-900 md:text-5xl">
+                See our AI solutions in action
+              </h2>
+              <p className="mx-auto mb-8 max-w-3xl text-lg text-gray-600">
+                Explore real-world implementations and the results we&apos;ve delivered
+                for clients across various industries.
+              </p>
+              <Link
+                // href="/success-stories"
+                href="#success-stories"
+                className="inline-flex items-center justify-center rounded-full bg-gray-900 px-8 py-4 text-base font-medium text-white transition-colors hover:bg-gray-800"
+              >
+                View success stories
+              </Link>
+            </div>
+          </div>
+
+          {/* Section 2: Infinite Scrolling Industries */}
+          <div className="overflow-hidden border-b border-t border-black bg-white py-4">
+            <div className="relative">
+              {/* Gradient overlays for fade effect */}
+              <div className="absolute bottom-0 left-0 top-0 z-10 w-32 bg-gradient-to-r from-white to-transparent" />
+              <div className="absolute bottom-0 right-0 top-0 z-10 w-32 bg-gradient-to-l from-white to-transparent" />
+
+              {/* Scrolling container */}
+              <div
+                ref={scrollRef}
+                className="animate-scroll flex gap-8 whitespace-nowrap"
+              >
+                {allIndustries.map((industry, index) => (
+                  <div key={index} className="inline-flex items-center gap-3 px-6 py-3">
+                    <ArrowRight className="h-4 w-4 text-yellow-400" />
+                    <span className="text-lg font-medium text-gray-900">{industry}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Section 3: Contact CTA */}
+        <section className="bg-white py-20">
+          <div className="mx-auto max-w-5xl px-4 text-center sm:px-6 lg:px-20">
+            <h2 className="mb-6 text-4xl font-bold text-gray-900 md:text-5xl">
+              Let&apos;s make your business intelligent.
+            </h2>
+            <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
+              <Link
+                href="/contact"
+                className="inline-flex items-center justify-center rounded-full bg-yellow-500 px-8 py-4 text-lg font-medium text-white transition-colors hover:bg-yellow-600"
+              >
+                Contact us
+              </Link>
+              <span className="text-lg text-gray-700">
+                to start your AI transformation.
+              </span>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  );
+}
