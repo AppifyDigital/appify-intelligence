@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState, useRef } from "react";
-import Image from "next/image";
 
 const services = [
   {
@@ -80,7 +79,7 @@ export default function AIServices() {
   const handleServiceClick = (index: number) => {
     setActiveService(index);
     setIsUserInteracting(true);
-    
+
     // Resume auto-scrolling after 10 seconds of no interaction
     setTimeout(() => {
       setIsUserInteracting(false);
@@ -93,10 +92,10 @@ export default function AIServices() {
       const scrollContainer = scrollRef.current;
       const containerWidth = containerRef.current.offsetWidth;
       const scrollPosition = activeService * containerWidth;
-      
+
       scrollContainer.scrollTo({
         left: scrollPosition,
-        behavior: 'smooth'
+        behavior: "smooth",
       });
     }
   }, [activeService]);
@@ -135,16 +134,16 @@ export default function AIServices() {
             <div className="hidden lg:block">
               <div
                 ref={scrollRef}
-                className="flex gap-6 overflow-x-auto scrollbar-hide"
+                className="scrollbar-hide flex gap-6 overflow-x-auto"
                 style={{
-                  scrollbarWidth: 'none',
-                  msOverflowStyle: 'none'
+                  scrollbarWidth: "none",
+                  msOverflowStyle: "none",
                 }}
               >
                 {services.map((service, index) => (
-                  <div 
-                    key={service.id} 
-                    className="w-[calc(100%-150px)] flex-shrink-0 cursor-pointer transition-transform hover:scale-105 group"
+                  <div
+                    key={service.id}
+                    className="group w-[calc(100%-150px)] flex-shrink-0 cursor-pointer transition-transform hover:scale-105"
                     ref={index === 0 ? containerRef : undefined}
                     onClick={() => handleServiceClick(index)}
                   >
@@ -159,11 +158,21 @@ export default function AIServices() {
 
                       {/* Gradient Overlay */}
                       <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
-                      
+
                       {/* Interactive indicator */}
-                      <div className="absolute top-4 right-4 bg-white/20 backdrop-blur-sm rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity">
-                        <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      <div className="absolute right-4 top-4 rounded-full bg-white/20 p-2 opacity-0 backdrop-blur-sm transition-opacity group-hover:opacity-100">
+                        <svg
+                          className="h-4 w-4 text-white"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M9 5l7 7-7 7"
+                          />
                         </svg>
                       </div>
 
@@ -201,8 +210,8 @@ export default function AIServices() {
 
             {/* Mobile: Show only active section */}
             <div className="block lg:hidden">
-              <div 
-                className="relative h-[500px] overflow-hidden rounded-3xl cursor-pointer transition-transform hover:scale-105 group"
+              <div
+                className="group relative h-[500px] cursor-pointer overflow-hidden rounded-3xl transition-transform hover:scale-105"
                 onClick={() => handleServiceClick(activeService)}
               >
                 {/* Background Image */}
@@ -215,11 +224,21 @@ export default function AIServices() {
 
                 {/* Gradient Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
-                
+
                 {/* Interactive indicator */}
-                <div className="absolute top-4 right-4 bg-white/20 backdrop-blur-sm rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity">
-                  <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                <div className="absolute right-4 top-4 rounded-full bg-white/20 p-2 opacity-0 backdrop-blur-sm transition-opacity group-hover:opacity-100">
+                  <svg
+                    className="h-4 w-4 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 5l7 7-7 7"
+                    />
                   </svg>
                 </div>
 
