@@ -35,8 +35,8 @@ const services = [
     name: "AI automation",
     title: "AI automation",
     description:
-      "Process automation. Workflow optimization. Intelligent task management.",
-    tags: ["Workflow", "Process optimization", "Efficiency"],
+      "Process automation. Workflow optimisation. Intelligent task management.",
+    tags: ["Workflow", "Process optimisation", "Efficiency"],
     image: "/assets/images/home/AI_automation.png",
   },
   {
