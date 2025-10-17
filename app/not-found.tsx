@@ -7,7 +7,8 @@ export default function NotFound() {
       <div className="flex min-h-screen flex-col items-center justify-center text-center">
         <Image
           src="/error_image.svg"
-          alt="404 Not Found"
+          alt="404 Not Found - Page not found error illustration"
+          title="404 Not Found"
           width={500}
           height={500}
           priority

@@ -28,7 +28,9 @@ function Footer() {
           <Link href="/" className="cursor-pointer transition-opacity hover:opacity-80">
             <Image
               src="/assets/svg/logo.svg"
-              alt="Appify - consult, develop, support"
+              alt="Appify Intelligence - AI Development & Automation Specialists"
+              title="Appify Intelligence"
+              loading="lazy"
               width={153}
               height={49}
               className="h-12 w-auto"

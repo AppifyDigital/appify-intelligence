@@ -3,20 +3,21 @@ import "./globals.css";
 import Navbar from "./components/Utils/Navbar";
 import Footer from "./components/Utils/Footer";
 import CookieBar from "./components/Utils/CookieBar";
+import { Metadata } from "next";
 
 const manrope = Manrope({
   subsets: ["latin"],
   display: "swap",
 });
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "AI Development & Automation Specialists | Appify Intelligence Ireland",
   description:
     "Appify Intelligence delivers award-nominated AI, web, and mobile development. Experts in AI automation, workflow, and custom agency solutions.",
   alternates: {
     canonical: "https://www.appifyintelligence.com",
   },
-  themeColor: "#FFB300",
+  themeColor: { media: "(prefers-color-scheme: light)", color: "#FFB300" },
   openGraph: {
     title: "AI Development & Automation Specialists | Appify Intelligence",
     description:

@@ -113,7 +113,9 @@ export default function WhyChoose() {
                     width={500}
                     height={500}
                     src={slide.cardImage}
-                    alt={slide.title}
+                    alt={`${slide.title} - ${slide.description}`}
+                    title={slide.title}
+                    loading="lazy"
                     className="h-full w-full object-cover"
                   />
                   {/* Floating decorative elements */}

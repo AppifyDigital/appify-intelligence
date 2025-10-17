@@ -196,7 +196,9 @@ export default function AIDashboards() {
                   width={600}
                   height={500}
                   src="/assets/images/services/ai-dashboards/ai-dashboards-image-1.png"
-                  alt="AI Dashboards"
+                  alt="AI-powered dashboards with real-time analytics and intelligent insights"
+                  title="AI Dashboards"
+                  loading="lazy"
                   className="h-full w-full rounded-[8px] object-cover"
                 />
               </div>
@@ -224,7 +226,9 @@ export default function AIDashboards() {
                   width={600}
                   height={500}
                   src="/assets/images/services/ai-dashboards/ai-dashboards-image-2.png"
-                  alt="AI Dashboards Approach"
+                  alt="Strategic approach to AI dashboard development and implementation"
+                  title="AI Dashboards Approach"
+                  loading="lazy"
                   className="h-full w-full rounded-[8px] object-cover"
                 />
               </div>
@@ -359,7 +363,9 @@ export default function AIDashboards() {
                   width={700}
                   height={400}
                   src="/assets/images/services/ai-dashboards/ai-dashboards-image-3.png"
-                  alt="Competitive Advantage"
+                  alt="AI dashboards competitive advantages and business benefits"
+                  title="AI Dashboards Competitive Advantage"
+                  loading="lazy"
                   className="h-full w-full rounded-[8px] object-cover"
                 />
               </div>
@@ -404,7 +410,9 @@ export default function AIDashboards() {
                 width={400}
                 height={300}
                 src="/assets/images/home/Proven_track_record.png"
-                alt="Proven Track Record"
+                alt="Proven track record in AI development and automation projects"
+                title="Proven Track Record"
+                loading="lazy"
                 className="h-full w-full rounded-[8px] object-cover transition-transform duration-300 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
@@ -430,7 +438,9 @@ export default function AIDashboards() {
                 width={400}
                 height={300}
                 src="/assets/images/home/Deep_AI_Expertise.png"
-                alt="Deep AI Expertise"
+                alt="Deep AI expertise across machine learning, automation, and intelligent systems"
+                title="Deep AI Expertise"
+                loading="lazy"
                 className="h-full w-full rounded-[8px] object-cover transition-transform duration-300 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
@@ -456,7 +466,9 @@ export default function AIDashboards() {
                 width={400}
                 height={300}
                 src="/assets/images/home/Full_Service_AI.png"
-                alt="Full-Service AI"
+                alt="Full-service AI solutions from strategy to implementation"
+                title="Full-Service AI"
+                loading="lazy"
                 className="h-full w-full rounded-[8px] object-cover transition-transform duration-300 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
@@ -482,7 +494,9 @@ export default function AIDashboards() {
                 width={400}
                 height={300}
                 src="/assets/images/home/Global_Trust.png"
-                alt="Global Trust"
+                alt="Globally trusted AI solutions with proven reliability"
+                title="Global Trust"
+                loading="lazy"
                 className="h-full w-full rounded-[8px] object-cover transition-transform duration-300 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
@@ -508,7 +522,9 @@ export default function AIDashboards() {
                 width={400}
                 height={300}
                 src="/assets/images/home/Award_Recognition.png"
-                alt="Award Recognition"
+                alt="Award-winning AI development and recognition in the industry"
+                title="Award Recognition"
+                loading="lazy"
                 className="h-full w-full rounded-[8px] object-cover transition-transform duration-300 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>

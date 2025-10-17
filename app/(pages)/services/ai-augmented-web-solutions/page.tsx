@@ -196,7 +196,9 @@ export default function AIAugmentedWebSolutions() {
                   width={600}
                   height={500}
                   src="/assets/images/services/ai-augmented-web-solutions/ai-augmented-web-solutions-image-1.png"
-                  alt="AI Augmented Web Solutions"
+                  alt="AI-augmented web solutions with intelligent automation and personalization"
+                  title="AI Augmented Web Solutions"
+                  loading="lazy"
                   className="h-full w-full rounded-[8px] object-cover"
                 />
               </div>
@@ -224,7 +226,9 @@ export default function AIAugmentedWebSolutions() {
                   width={600}
                   height={500}
                   src="/assets/images/services/ai-augmented-web-solutions/ai-augmented-web-solutions-image-2.png"
-                  alt="AI Web Capabilities"
+                  alt="Advanced AI web capabilities including personalization and automation"
+                  title="AI Web Capabilities"
+                  loading="lazy"
                   className="h-full w-full rounded-[8px] object-cover"
                 />
               </div>
@@ -383,7 +387,9 @@ export default function AIAugmentedWebSolutions() {
                   width={700}
                   height={400}
                   src="/assets/images/services/ai-augmented-web-solutions/ai-augmented-web-solutions-image-3.png"
-                  alt="Competitive Advantage"
+                  alt="AI web solutions competitive advantages and business benefits"
+                  title="AI Web Solutions Competitive Advantage"
+                  loading="lazy"
                   className="h-full w-full rounded-[8px] object-cover"
                 />
               </div>
@@ -428,7 +434,9 @@ export default function AIAugmentedWebSolutions() {
                 width={400}
                 height={300}
                 src="/assets/images/home/Proven_track_record.png"
-                alt="Proven Track Record"
+                alt="Proven track record in AI development and automation projects"
+                title="Proven Track Record"
+                loading="lazy"
                 className="h-full w-full rounded-[8px] object-cover transition-transform duration-300 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
@@ -454,7 +462,9 @@ export default function AIAugmentedWebSolutions() {
                 width={400}
                 height={300}
                 src="/assets/images/home/Deep_AI_Expertise.png"
-                alt="Deep AI Expertise"
+                alt="Deep AI expertise across machine learning, automation, and intelligent systems"
+                title="Deep AI Expertise"
+                loading="lazy"
                 className="h-full w-full rounded-[8px] object-cover transition-transform duration-300 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
@@ -480,7 +490,9 @@ export default function AIAugmentedWebSolutions() {
                 width={400}
                 height={300}
                 src="/assets/images/home/Full_Service_AI.png"
-                alt="Full-Service AI"
+                alt="Full-service AI solutions from strategy to implementation"
+                title="Full-Service AI"
+                loading="lazy"
                 className="h-full w-full rounded-[8px] object-cover transition-transform duration-300 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
@@ -506,7 +518,9 @@ export default function AIAugmentedWebSolutions() {
                 width={400}
                 height={300}
                 src="/assets/images/home/Global_Trust.png"
-                alt="Global Trust"
+                alt="Globally trusted AI solutions with proven reliability"
+                title="Global Trust"
+                loading="lazy"
                 className="h-full w-full rounded-[8px] object-cover transition-transform duration-300 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
@@ -532,7 +546,9 @@ export default function AIAugmentedWebSolutions() {
                 width={400}
                 height={300}
                 src="/assets/images/home/Award_Recognition.png"
-                alt="Award Recognition"
+                alt="Award-winning AI development and recognition in the industry"
+                title="Award Recognition"
+                loading="lazy"
                 className="h-full w-full rounded-[8px] object-cover transition-transform duration-300 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>

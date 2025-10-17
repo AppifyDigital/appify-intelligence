@@ -187,7 +187,9 @@ export default function Home() {
                   width={500}
                   height={500}
                   src="/assets/images/home/Training_&_education.png"
-                  alt="Training & education"
+                  alt="AI-powered training and education platform showcasing digital learning solutions"
+                  title="Training & Education - AI Learning Platform"
+                  loading="eager"
                   className="h-full w-full object-cover transition-transform duration-300 hover:scale-110"
                   priority={true}
                 />
@@ -218,7 +220,9 @@ export default function Home() {
                   width={500}
                   height={500}
                   src="/assets/images/home/HR_&_recruitment.png"
-                  alt="HR & recruitment"
+                  alt="AI-driven HR and recruitment platform with intelligent candidate screening"
+                  title="HR & Recruitment - AI Talent Management"
+                  loading="eager"
                   className="h-full w-full object-cover transition-transform duration-300 hover:scale-110"
                   priority={true}
                 />
@@ -246,7 +250,9 @@ export default function Home() {
                   width={500}
                   height={500}
                   src="/assets/images/home/Mental_health_&_wellbeing.png"
-                  alt="Mental health & wellbeing"
+                  alt="AI-powered mental health and wellbeing support platform with CBT features"
+                  title="Mental Health & Wellbeing - AI Support Platform"
+                  loading="eager"
                   className="h-full w-full object-cover transition-transform duration-300 hover:scale-110"
                   priority={true}
                 />
@@ -337,7 +343,9 @@ export default function Home() {
                   width={500}
                   height={500}
                   src="/assets/images/home/AppifyWebX_image.png"
-                  alt="AppifyWebX Global Platform"
+                  alt="AppifyWebX Global Platform - AI-powered web development and automation solution"
+                  title="AppifyWebX Global Platform"
+                  loading="lazy"
                   className="h-full w-full object-cover transition-transform duration-300 hover:scale-110"
                 />
               </div>
@@ -382,7 +390,9 @@ export default function Home() {
                   width={500}
                   height={500}
                   src="/assets/images/home/AppifyX_image.png"
-                  alt="AppifyX Agency Tool"
+                  alt="AppifyX Agency Tool - Comprehensive AI automation and workflow management platform"
+                  title="AppifyX Agency Tool"
+                  loading="lazy"
                   className="h-full w-full object-cover transition-transform duration-300 hover:scale-110"
                 />
               </div>
@@ -475,7 +485,9 @@ export default function Home() {
                     width={500}
                     height={500}
                     src="/assets/images/home/digital_media_awards.png"
-                    alt="Best App"
+                    alt="Digital Media Awards - Best App recognition badge"
+                    title="Best App Award"
+                    loading="lazy"
                     className="h-full w-full object-cover transition-transform duration-300 hover:scale-110"
                   />
                 </div>
@@ -499,7 +511,9 @@ export default function Home() {
                     width={500}
                     height={500}
                     src="/assets/images/home/digital_media_awards.png"
-                    alt="Best Small Agency"
+                    alt="Digital Media Awards - Best Small Agency recognition badge"
+                    title="Best Small Agency Award"
+                    loading="lazy"
                     className="h-full w-full object-cover transition-transform duration-300 hover:scale-110"
                   />
                 </div>
@@ -523,7 +537,9 @@ export default function Home() {
                     width={500}
                     height={500}
                     src="/assets/images/home/digital_media_awards.png"
-                    alt="Best Use of AI"
+                    alt="Digital Media Awards - Best Use of AI recognition badge"
+                    title="Best Use of AI Award"
+                    loading="lazy"
                     className="h-full w-full object-cover transition-transform duration-300 hover:scale-110"
                   />
                 </div>
