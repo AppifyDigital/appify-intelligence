@@ -17,6 +17,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.appifyintelligence.com",
   },
+
   themeColor: { media: "(prefers-color-scheme: light)", color: "#FFB300" },
   openGraph: {
     title: "AI Development & Automation Specialists | Appify Intelligence",
@@ -24,6 +25,14 @@ export const metadata: Metadata = {
       "Discover Appify Intelligence's award-nominated AI expertise—custom solutions for web, mobile, automation, and agency management across Ireland.",
     type: "website",
     url: "https://www.appifyintelligence.com",
+    images: [
+      {
+        url: "/appify-intelligence-og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Appify Intelligence - AI Development & Automation Specialists",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
