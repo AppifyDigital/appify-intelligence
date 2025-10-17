@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     url: "https://www.appifyintelligence.com",
     images: [
       {
-        url: "/appify-intelligence-og-image.png",
+        url: "https://appifyintelligence.com/appify-intelligence-og-image.png",
         width: 1200,
         height: 630,
         alt: "Appify Intelligence - AI Development & Automation Specialists",
