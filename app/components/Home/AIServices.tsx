@@ -1,5 +1,6 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import { useEffect, useState, useRef } from "react";
 
 const services = [
@@ -11,6 +12,7 @@ const services = [
       "Strategic AI consulting. Roadmap development. Opportunity analysis. Implementation planning.",
     tags: ["Strategy", "Model selection", "Implementation support"],
     image: "/assets/images/home/AI_consulting.png",
+    link: "/services/ai-consulting",
   },
   {
     id: 1,
@@ -20,6 +22,7 @@ const services = [
       "AI-powered web development. Personalisation and automation. Smart user experiences.",
     tags: ["Smart", "Adaptive websites", "AI integration"],
     image: "/assets/images/home/AI_augmented_web_solutions.png",
+    link: "/services/ai-augmented-web-solutions",
   },
   {
     id: 2,
@@ -29,6 +32,7 @@ const services = [
       "Intelligent conversational AI. 24/7 customer support. Natural language processing.",
     tags: ["Conversational AI", "NLP", "Automation"],
     image: "/assets/images/home/AI_chatbots_&_agents.png",
+    link: "/services/ai-chatbots-agents",
   },
   {
     id: 3,
@@ -38,6 +42,7 @@ const services = [
       "Process automation. Workflow optimisation. Intelligent task management.",
     tags: ["Workflow", "Process optimisation", "Efficiency"],
     image: "/assets/images/home/AI_automation.png",
+    link: "/services/ai-automation",
   },
   {
     id: 4,
@@ -47,6 +52,7 @@ const services = [
       "Retrieval-Augmented Generation. Knowledge base integration. Intelligent document processing.",
     tags: ["Knowledge base", "Document AI", "Semantic search"],
     image: "/assets/images/home/RAG_Systems.png",
+    link: "/services/rag-systems",
   },
   {
     id: 5,
@@ -55,6 +61,7 @@ const services = [
     description: "Real-time analytics. Predictive insights. Custom reporting solutions.",
     tags: ["Analytics", "Insights", "Reporting"],
     image: "/assets/images/home/AI_dashboards.png",
+    link: "/services/ai-dashboards",
   },
 ];
 
@@ -63,7 +70,7 @@ export default function AIServices() {
   const [isUserInteracting, setIsUserInteracting] = useState(false);
   const scrollRef = useRef<HTMLDivElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
-
+  const router = useRouter();
   // Auto-scroll every 5 seconds
   useEffect(() => {
     if (isUserInteracting) return;
@@ -79,7 +86,6 @@ export default function AIServices() {
   const handleServiceClick = (index: number) => {
     setActiveService(index);
     setIsUserInteracting(true);
-
     // Resume auto-scrolling after 10 seconds of no interaction
     setTimeout(() => {
       setIsUserInteracting(false);
@@ -143,9 +149,11 @@ export default function AIServices() {
                 {services.map((service, index) => (
                   <div
                     key={service.id}
-                    className="group w-[calc(100%-150px)] flex-shrink-0 cursor-pointer transition-transform hover:scale-105"
+                    className="group w-[calc(100%-150px)] flex-shrink-0 cursor-pointer transition-transform hover:scale-95"
                     ref={index === 0 ? containerRef : undefined}
-                    onClick={() => handleServiceClick(index)}
+                    onClick={() => {
+                      router.push(service.link);
+                    }}
                   >
                     <div className="relative h-[500px] overflow-hidden rounded-3xl">
                       {/* Background Image */}
@@ -156,27 +164,8 @@ export default function AIServices() {
                         }}
                       />
 
-                      {/* Gradient Overlay */}
                       <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
 
-                      {/* Interactive indicator */}
-                      <div className="absolute right-4 top-4 rounded-full bg-white/20 p-2 opacity-0 backdrop-blur-sm transition-opacity group-hover:opacity-100">
-                        <svg
-                          className="h-4 w-4 text-white"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M9 5l7 7-7 7"
-                          />
-                        </svg>
-                      </div>
-
-                      {/* Content */}
                       <div className="relative flex h-full flex-col justify-between p-8 text-white md:p-12">
                         <div>
                           <h3 className="mb-4 text-4xl font-bold md:text-5xl">

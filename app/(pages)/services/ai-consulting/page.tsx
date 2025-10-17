@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import Head from "next/head";
 
 export default function AIConsulting() {
   const [visibleElements, setVisibleElements] = useState<Set<string>>(new Set());
@@ -31,7 +32,13 @@ export default function AIConsulting() {
   }, []);
 
   return (
-    <main className="min-h-screen">
+    <>
+      <Head>
+        <title>AI Consulting Services | Appify Intelligence Ireland</title>
+        <meta name="description" content="Expert AI consulting services to help your business leverage artificial intelligence for growth and efficiency. Strategic AI implementation and guidance." />
+        <link rel="canonical" href="https://www.appifyintelligence.com/services/ai-consulting" />
+      </Head>
+      <main className="min-h-screen">
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gray-50 md:pb-20">
         {/* Animated Background */}
@@ -567,6 +574,7 @@ export default function AIConsulting() {
           </div>
         </div>
       </section>
-    </main>
+      </main>
+    </>
   );
 }

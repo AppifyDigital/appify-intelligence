@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { Mail, Phone, MapPin, Send, CheckCircle, AlertCircle } from "lucide-react";
+import Head from "next/head";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -103,7 +104,13 @@ export default function Contact() {
   };
 
   return (
-    <main className="relative overflow-hidden bg-gradient-to-br from-white via-blue-50/30 to-purple-50/30 py-8 lg:py-32">
+    <>
+      <Head>
+        <title>Contact Us | Appify Intelligence Ireland</title>
+        <meta name="description" content="Get in touch with Appify Intelligence for AI development, automation, and consulting services. Contact our expert team for your AI project needs." />
+        <link rel="canonical" href="https://www.appifyintelligence.com/contact" />
+      </Head>
+      <main className="relative overflow-hidden bg-gradient-to-br from-white via-blue-50/30 to-purple-50/30 py-8 lg:py-32">
       {/* Floating background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 h-80 w-80 rounded-full bg-gradient-to-br from-blue-100/40 to-purple-100/40 blur-3xl animate-pulse"></div>
@@ -369,6 +376,7 @@ export default function Contact() {
           </div>
         </div>
       </div>
-    </main>
+      </main>
+    </>
   );
 }

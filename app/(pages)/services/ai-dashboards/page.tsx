@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import Head from "next/head";
 
 export default function AIDashboards() {
   const [visibleElements, setVisibleElements] = useState<Set<string>>(new Set());
@@ -31,7 +32,13 @@ export default function AIDashboards() {
   }, []);
 
   return (
-    <main className="min-h-screen">
+    <>
+      <Head>
+        <title>AI Dashboards | Appify Intelligence Ireland</title>
+        <meta name="description" content="Intelligent AI-powered dashboards that provide real-time insights and analytics. Transform your data into actionable intelligence with our custom dashboard solutions." />
+        <link rel="canonical" href="https://www.appifyintelligence.com/services/ai-dashboards" />
+      </Head>
+      <main className="min-h-screen">
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gray-50 md:pb-20">
         {/* Animated Background */}
@@ -81,12 +88,12 @@ export default function AIDashboards() {
             }`}
           >
             <h1 className="mb-8 text-5xl font-bold text-gray-900 md:text-6xl">
-              AI-based custom business management dashboards
+              AI dashboards
             </h1>
             <p className="mx-auto max-w-4xl text-xl leading-relaxed text-gray-700 md:text-2xl">
-              Gain total visibility and control with custom AI-powered dashboards that
-              turn data into decisions. Appify Intelligence builds intelligent dashboards
-              that track performance, predict outcomes, and guide strategic action.
+              Transform your data into actionable insights with intelligent dashboards
+              that provide real-time analytics, predictive insights, and automated
+              reporting to drive informed business decisions.
             </p>
           </div>
         </div>
@@ -152,20 +159,24 @@ export default function AIDashboards() {
               </h2>
               <div className="space-y-6 text-lg text-gray-900">
                 <p>
-                  <strong>Custom-fit design:</strong> Each dashboard is purpose-built
-                  around your KPIs, workflows, and strategic priorities.
+                  <strong>Intelligent data visualization:</strong> Our AI-powered
+                  dashboards automatically identify patterns, trends, and anomalies in
+                  your data to highlight what matters most.
                 </p>
                 <p>
-                  <strong>Advanced analytics:</strong> Predictive modelling, forecasting,
-                  and automated reporting give you real-time visibility.
+                  <strong>Real-time insights:</strong> Get instant updates on key metrics
+                  with automated alerts and notifications that keep you informed of
+                  critical changes.
                 </p>
                 <p>
-                  <strong>Unified data view:</strong> Connect HR, CRM, finance,
-                  operations, and more into one seamless interface.
+                  <strong>Predictive analytics:</strong> Leverage machine learning to
+                  forecast trends, identify opportunities, and anticipate potential issues
+                  before they impact your business.
                 </p>
                 <p>
-                  <strong>Secure and intuitive:</strong> Designed for usability, with
-                  role-based access and enterprise-grade security.
+                  <strong>Customizable views:</strong> Tailored dashboards for different
+                  stakeholders with role-based access and personalized insights for
+                  maximum relevance.
                 </p>
               </div>
             </div>
@@ -194,16 +205,16 @@ export default function AIDashboards() {
         </div>
       </section>
 
-      {/* Dashboard Capabilities Section */}
+      {/* Our Approach Section */}
       <section className="w-full bg-gray-100 py-20">
         <div className="mx-auto max-w-[1600px] px-4 sm:px-6 lg:px-20">
           <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:items-center">
             {/* Image */}
             <div
-              id="dashboard-capabilities-image"
+              id="approach-image"
               data-animate="true"
               className={`flex h-full justify-center transition-all duration-1000 lg:justify-start ${
-                visibleElements.has("dashboard-capabilities-image")
+                visibleElements.has("approach-image")
                   ? "translate-x-0 opacity-100"
                   : "-translate-x-20 opacity-0"
               }`}
@@ -213,7 +224,7 @@ export default function AIDashboards() {
                   width={600}
                   height={500}
                   src="/assets/images/services/ai-dashboards/ai-dashboards-image-2.png"
-                  alt="Dashboard Capabilities"
+                  alt="AI Dashboards Approach"
                   className="h-full w-full rounded-[8px] object-cover"
                 />
               </div>
@@ -221,44 +232,28 @@ export default function AIDashboards() {
 
             {/* Text Content */}
             <div
-              id="dashboard-capabilities-text"
+              id="approach-text"
               data-animate="true"
               className={`transition-all duration-1000 ${
-                visibleElements.has("dashboard-capabilities-text")
+                visibleElements.has("approach-text")
                   ? "translate-x-0 opacity-100"
                   : "translate-x-20 opacity-0"
               }`}
             >
               <h2 className="mb-8 text-4xl font-bold text-gray-900 md:text-5xl">
-                Dashboard capabilities
+                Our approach
               </h2>
-              <div className="space-y-4 text-lg text-gray-900">
-                <ul className="space-y-3">
-                  <li className="flex items-center">
-                    <span className="mr-3 mt-1 h-2 w-2 rounded-full bg-[#FFB300]"></span>
-                    KPI tracking and performance analytics
-                  </li>
-                  <li className="flex items-center">
-                    <span className="mr-3 mt-1 h-2 w-2 rounded-full bg-[#FFB300]"></span>
-                    Predictive insights and forecasting
-                  </li>
-                  <li className="flex items-center">
-                    <span className="mr-3 mt-1 h-2 w-2 rounded-full bg-[#FFB300]"></span>
-                    Automated alerts and exception reporting
-                  </li>
-                  <li className="flex items-center">
-                    <span className="mr-3 mt-1 h-2 w-2 rounded-full bg-[#FFB300]"></span>
-                    Role-based access and personalised views
-                  </li>
-                  <li className="flex items-center">
-                    <span className="mr-3 mt-1 h-2 w-2 rounded-full bg-[#FFB300]"></span>
-                    Integration with recruitment, learning, and wellbeing systems
-                  </li>
-                  <li className="flex items-center">
-                    <span className="mr-3 mt-1 h-2 w-2 rounded-full bg-[#FFB300]"></span>
-                    Solutions based on cutting-edge industry knowledge
-                  </li>
-                </ul>
+              <div className="space-y-6 text-lg text-gray-900">
+                <p>
+                  We analyze your data sources and business objectives to create
+                  intelligent dashboards that surface the most important insights
+                  automatically.
+                </p>
+                <p>
+                  Our approach combines advanced data visualization with AI-powered
+                  analytics to transform raw data into actionable business intelligence
+                  that drives decision-making.
+                </p>
               </div>
             </div>
           </div>
@@ -342,9 +337,10 @@ export default function AIDashboards() {
                 Competitive advantage
               </h2>
               <p className="text-lg text-gray-900">
-                Our dashboards help you spot trends early, act on opportunities, and
-                mitigate risks before they impact operations. With actionable intelligence
-                at your fingertips, your team can make smarter, faster decisions.
+                Our AI dashboards don&apos;t just display data—they interpret it, predict
+                trends, and provide actionable recommendations. This intelligent approach
+                to business intelligence gives you a significant competitive edge through
+                data-driven decision making.
               </p>
             </div>
 
@@ -372,27 +368,27 @@ export default function AIDashboards() {
         </div>
       </section>
 
-      {/* Proven Impact Section */}
+      {/* Success in Action Section */}
       <section className="w-full bg-white py-20">
         <div className="mx-auto max-w-[1600px] px-4 sm:px-6 lg:px-20">
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {/* Header */}
+            {/* Card 1 - Proven Track Record */}
             <div
-              id="proven-impact-header"
+              id="success-header"
               data-animate="true"
               className={`mb-16 max-w-xl transition-all duration-1000 md:p-4 ${
-                visibleElements.has("proven-impact-header")
+                visibleElements.has("success-header")
                   ? "translate-y-0 opacity-100"
                   : "translate-y-10 opacity-0"
               }`}
             >
               <h2 className="mb-6 text-4xl font-bold text-gray-900 md:text-5xl">
-                Proven impact
+                Success in action
               </h2>
               <p className="text-lg text-gray-900">
-                We&apos;ve built dashboards for recruitment pipelines, learner progress
-                tracking, and logistics forecasting — delivering faster decisions, clearer
-                insights, and improved service.
+                From recruitment and coaching to logistics and legal services, we&apos;ve
+                delivered solutions that automate manual tasks, enhance decision-making,
+                and unlock new revenue streams.
               </p>
             </div>
             <div
@@ -493,7 +489,7 @@ export default function AIDashboards() {
               <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
                 <h3 className="mb-2 text-2xl font-bold">Global Trust</h3>
                 <p className="text-sm text-gray-200">
-                  Trusted by leading organisations in Ireland and internationally
+                  Trusted by leading organizations in Ireland and internationally
                 </p>
               </div>
             </div>
@@ -550,13 +546,13 @@ export default function AIDashboards() {
             <div className="absolute left-0 top-1/2 h-16 w-[5px] -translate-y-1/2 rounded-l-3xl bg-[#FFB300] transition-all duration-500 group-hover:top-0 group-hover:h-full group-hover:translate-y-0"></div>
             <div className="relative z-10">
               <h2 className="mb-8 text-center text-4xl font-bold text-gray-900 md:text-5xl">
-                Let&apos;s build your intelligent dashboard
+                Let&apos;s start your AI journey
               </h2>
 
               <div className="relative mb-12 text-center">
                 <p className="text-xl text-gray-700 md:text-2xl">
-                  Apply here for a free 30-minute consultation and discover how
-                  AppifyIntelligence dashboards can power your growth.
+                  Apply here for a free 30-minute consultation and discover how Appify
+                  Intelligence can accelerate your profitability.
                 </p>
               </div>
 
@@ -572,6 +568,7 @@ export default function AIDashboards() {
           </div>
         </div>
       </section>
-    </main>
+      </main>
+    </>
   );
 }

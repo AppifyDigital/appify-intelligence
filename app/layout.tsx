@@ -13,8 +13,10 @@ export const metadata = {
   title: "AI Development & Automation Specialists | Appify Intelligence Ireland",
   description:
     "Appify Intelligence delivers award-nominated AI, web, and mobile development. Experts in AI automation, workflow, and custom agency solutions.",
-  keywords:
-    "AI development, AI automation, AI workflow, app development Ireland, AI web solutions, mobile app AI, agency management tool, AppifyWebX, AppifyX",
+  alternates: {
+    canonical: "https://www.appifyintelligence.com",
+  },
+  themeColor: "#FFB300",
   openGraph: {
     title: "AI Development & Automation Specialists | Appify Intelligence",
     description:

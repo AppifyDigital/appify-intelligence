@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import Head from "next/head";
 
 export default function AIAugmentedWebSolutions() {
   const [visibleElements, setVisibleElements] = useState<Set<string>>(new Set());
@@ -31,33 +32,41 @@ export default function AIAugmentedWebSolutions() {
   }, []);
 
   return (
-    <main className="min-h-screen">
+    <>
+      <Head>
+        <title>AI-Augmented Web Solutions | Appify Intelligence Ireland</title>
+        <meta name="description" content="Transform your online presence with AI-powered web platforms that learn, adapt, and optimise for results. Appify Intelligence integrates advanced AI capabilities into websites." />
+        <link rel="canonical" href="https://www.appifyintelligence.com/services/ai-augmented-web-solutions" />
+      </Head>
+      <main className="min-h-screen">
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gray-50 md:pb-20">
         {/* Animated Background */}
         <div className="absolute inset-0">
           {/* Base Background */}
           <div className="absolute inset-0 bg-gray-50"></div>
-          
+
           {/* Shimmer Effect */}
-          <div 
+          <div
             className="absolute inset-0 opacity-30"
             style={{
-              background: 'linear-gradient(110deg, transparent 40%, rgba(255, 255, 255, 0.5) 50%, transparent 60%)',
-              animation: 'shimmer 3s ease-in-out infinite',
+              background:
+                "linear-gradient(110deg, transparent 40%, rgba(255, 255, 255, 0.5) 50%, transparent 60%)",
+              animation: "shimmer 3s ease-in-out infinite",
             }}
           ></div>
-          
+
           {/* Secondary Shimmer */}
-          <div 
+          <div
             className="absolute inset-0 opacity-20"
             style={{
-              background: 'linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.3) 50%, transparent 70%)',
-              animation: 'shimmer 4s ease-in-out infinite reverse',
+              background:
+                "linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.3) 50%, transparent 70%)",
+              animation: "shimmer 4s ease-in-out infinite reverse",
             }}
           ></div>
         </div>
-        
+
         <style jsx>{`
           @keyframes shimmer {
             0% {
@@ -82,7 +91,10 @@ export default function AIAugmentedWebSolutions() {
               AI-augmented web solutions
             </h1>
             <p className="mx-auto max-w-4xl text-xl leading-relaxed text-gray-700 md:text-2xl">
-              Transform your online presence with AI-powered web platforms that learn, adapt, and optimise for results. Appify Intelligence integrates advanced AI capabilities into websites to deliver dynamic experiences, boost engagement, and improve conversion.
+              Transform your online presence with AI-powered web platforms that learn,
+              adapt, and optimise for results. Appify Intelligence integrates advanced AI
+              capabilities into websites to deliver dynamic experiences, boost engagement,
+              and improve conversion.
             </p>
           </div>
         </div>
@@ -148,16 +160,23 @@ export default function AIAugmentedWebSolutions() {
               </h2>
               <div className="space-y-6 text-lg text-gray-900">
                 <p>
-                  <strong>Advanced AI integration:</strong> We embed machine learning and intelligent automation into your site architecture for real-time personalisation and continuous optimisation.
+                  <strong>Advanced AI integration:</strong> We embed machine learning and
+                  intelligent automation into your site architecture for real-time
+                  personalisation and continuous optimisation.
                 </p>
                 <p>
-                  <strong>Personalised experiences:</strong> Dynamic content, recommendation engines, and predictive UX ensure every visitor&apos;s journey is tailored for maximum impact.
+                  <strong>Personalised experiences:</strong> Dynamic content,
+                  recommendation engines, and predictive UX ensure every visitor&apos;s
+                  journey is tailored for maximum impact.
                 </p>
                 <p>
-                  <strong>Operational efficiency:</strong> Automate support, streamline workflows, and integrate with business systems to reduce costs and complexity.
+                  <strong>Operational efficiency:</strong> Automate support, streamline
+                  workflows, and integrate with business systems to reduce costs and
+                  complexity.
                 </p>
                 <p>
-                  <strong>Future-proof design:</strong> Our solutions evolve alongside your users&apos; expectations and emerging technologies.
+                  <strong>Future-proof design:</strong> Our solutions evolve alongside
+                  your users&apos; expectations and emerging technologies.
                 </p>
               </div>
             </div>
@@ -309,7 +328,7 @@ export default function AIAugmentedWebSolutions() {
             <div className="animate-fade-in-up animation-delay-400 group rounded-[8px] bg-gray-50 p-8 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
               <div className="mb-4 h-1 w-12 bg-[#FFB300]"></div>
               <h3 className="text-xl font-semibold text-gray-900">
-                Performance optimisation
+                Performance optimization
               </h3>
             </div>
 
@@ -342,7 +361,10 @@ export default function AIAugmentedWebSolutions() {
                 Competitive advantage
               </h2>
               <p className="text-lg text-gray-900">
-                Your website becomes a living platform - learning from user behaviour, improving continuously, and driving measurable business outcomes. We combine technical depth with creative execution to build digital assets that outperform competitors.
+                Your website becomes a living platform - learning from user behaviour,
+                improving continuously, and driving measurable business outcomes. We
+                combine technical depth with creative execution to build digital assets
+                that outperform competitors.
               </p>
             </div>
 
@@ -388,7 +410,9 @@ export default function AIAugmentedWebSolutions() {
                 Proven impact
               </h2>
               <p className="text-lg text-gray-900">
-                We&apos;ve delivered intelligent web platforms across recruitment, e-learning, legal, and logistics sectors — from personalised candidate experiences to interactive training environments.
+                We&apos;ve delivered intelligent web platforms across recruitment,
+                e-learning, legal, and logistics sectors — from personalised candidate
+                experiences to interactive training environments.
               </p>
             </div>
             <div
@@ -489,7 +513,7 @@ export default function AIAugmentedWebSolutions() {
               <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
                 <h3 className="mb-2 text-2xl font-bold">Global Trust</h3>
                 <p className="text-sm text-gray-200">
-                  Trusted by leading organisations in Ireland and internationally
+                  Trusted by leading organizations in Ireland and internationally
                 </p>
               </div>
             </div>
@@ -551,7 +575,8 @@ export default function AIAugmentedWebSolutions() {
 
               <div className="relative mb-12 text-center">
                 <p className="text-xl text-gray-700 md:text-2xl">
-                  Apply here for a free 30-minute consultation to see how AI can transform your digital performance.
+                  Apply here for a free 30-minute consultation to see how AI can transform
+                  your digital performance.
                 </p>
               </div>
 
@@ -567,6 +592,7 @@ export default function AIAugmentedWebSolutions() {
           </div>
         </div>
       </section>
-    </main>
+      </main>
+    </>
   );
 }

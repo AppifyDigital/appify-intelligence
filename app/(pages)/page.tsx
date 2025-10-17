@@ -189,6 +189,7 @@ export default function Home() {
                   src="/assets/images/home/Training_&_education.png"
                   alt="Training & education"
                   className="h-full w-full object-cover transition-transform duration-300 hover:scale-110"
+                  priority={true}
                 />
               </div>
               <div className="p-6">
@@ -219,6 +220,7 @@ export default function Home() {
                   src="/assets/images/home/HR_&_recruitment.png"
                   alt="HR & recruitment"
                   className="h-full w-full object-cover transition-transform duration-300 hover:scale-110"
+                  priority={true}
                 />
               </div>
               <div className="p-6">
@@ -246,6 +248,7 @@ export default function Home() {
                   src="/assets/images/home/Mental_health_&_wellbeing.png"
                   alt="Mental health & wellbeing"
                   className="h-full w-full object-cover transition-transform duration-300 hover:scale-110"
+                  priority={true}
                 />
               </div>
               <div className="p-6">
