@@ -108,7 +108,7 @@ export default function Contact() {
       <Head>
         <title>Contact Us | Appify Intelligence Ireland</title>
         <meta name="description" content="Get in touch with Appify Intelligence for AI development, automation, and consulting services. Contact our expert team for your AI project needs." />
-        <link rel="canonical" href="https://www.appifyintelligence.com/contact" />
+        <link rel="canonical" href="https://appifyintelligence.com/contact" />
       </Head>
       <main className="relative overflow-hidden bg-gradient-to-br from-white via-blue-50/30 to-purple-50/30 py-8 lg:py-32">
       {/* Floating background elements */}

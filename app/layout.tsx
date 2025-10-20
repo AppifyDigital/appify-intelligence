@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   description:
     "Appify Intelligence delivers award-nominated AI, web, and mobile development. Experts in AI automation, workflow, and custom agency solutions.",
   alternates: {
-    canonical: "https://www.appifyintelligence.com",
+    canonical: "https://appifyintelligence.com",
   },
 
   themeColor: { media: "(prefers-color-scheme: light)", color: "#FFB300" },
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     description:
       "Discover Appify Intelligence's award-nominated AI expertise—custom solutions for web, mobile, automation, and agency management across Ireland.",
     type: "website",
-    url: "https://www.appifyintelligence.com",
+    url: "https://appifyintelligence.com",
     images: [
       {
         url: "https://appifyintelligence.com/appify-intelligence-og-image.png",

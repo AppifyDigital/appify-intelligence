@@ -1,7 +1,7 @@
 export const metadata = {
   title: "About Us | Appify Intelligence Ireland",
   description: "Learn about Appify Intelligence's mission, team, and expertise in AI development and automation solutions.",
-  canonical: "https://www.appifyintelligence.com/about",
+  canonical: "https://appifyintelligence.com/about",
 };
 
 export default function About() {

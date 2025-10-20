@@ -36,7 +36,7 @@ export default function AIAugmentedWebSolutions() {
       <Head>
         <title>AI-Augmented Web Solutions | Appify Intelligence Ireland</title>
         <meta name="description" content="Transform your online presence with AI-powered web platforms that learn, adapt, and optimise for results. Appify Intelligence integrates advanced AI capabilities into websites." />
-        <link rel="canonical" href="https://www.appifyintelligence.com/services/ai-augmented-web-solutions" />
+        <link rel="canonical" href="https://appifyintelligence.com/services/ai-augmented-web-solutions" />
       </Head>
       <main className="min-h-screen">
       {/* Hero Section */}

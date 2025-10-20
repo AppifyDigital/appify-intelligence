@@ -36,7 +36,7 @@ export default function AIChatbotsAgents() {
       <Head>
         <title>AI Chatbots and Intelligent Agents | Appify Intelligence Ireland</title>
         <meta name="description" content="Redefine engagement with AI chatbots and intelligent agents designed for real-world business impact. Our solutions deliver human-like conversations that scale support." />
-        <link rel="canonical" href="https://www.appifyintelligence.com/services/ai-chatbots-agents" />
+        <link rel="canonical" href="https://appifyintelligence.com/services/ai-chatbots-agents" />
       </Head>
       <main className="min-h-screen">
       {/* Hero Section */}

@@ -36,7 +36,7 @@ export default function AIDashboards() {
       <Head>
         <title>AI Dashboards | Appify Intelligence Ireland</title>
         <meta name="description" content="Intelligent AI-powered dashboards that provide real-time insights and analytics. Transform your data into actionable intelligence with our custom dashboard solutions." />
-        <link rel="canonical" href="https://www.appifyintelligence.com/services/ai-dashboards" />
+        <link rel="canonical" href="https://appifyintelligence.com/services/ai-dashboards" />
       </Head>
       <main className="min-h-screen">
       {/* Hero Section */}

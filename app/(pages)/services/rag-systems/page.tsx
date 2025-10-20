@@ -36,7 +36,7 @@ export default function RAGSystems() {
       <Head>
         <title>AI RAG Systems | Appify Intelligence Ireland</title>
         <meta name="description" content="Supercharge your organisation's intelligence with Retrieval-Augmented Generation (RAG). Appify Intelligence builds advanced systems that combine generative AI with real-time data access." />
-        <link rel="canonical" href="https://www.appifyintelligence.com/services/rag-systems" />
+        <link rel="canonical" href="https://appifyintelligence.com/services/rag-systems" />
       </Head>
       <main className="min-h-screen">
       {/* Hero Section */}

@@ -36,7 +36,7 @@ export default function AIAutomation() {
       <Head>
         <title>AI-Based Business Process Automation | Appify Intelligence Ireland</title>
         <meta name="description" content="Enhance productivity, lower costs, and unlock new capabilities with AI-powered automation. Appify Intelligence designs intelligent systems that streamline workflows." />
-        <link rel="canonical" href="https://www.appifyintelligence.com/services/ai-automation" />
+        <link rel="canonical" href="https://appifyintelligence.com/services/ai-automation" />
       </Head>
       <main className="min-h-screen">
       {/* Hero Section */}

@@ -36,7 +36,7 @@ export default function AIConsulting() {
       <Head>
         <title>AI Consulting Services | Appify Intelligence Ireland</title>
         <meta name="description" content="Expert AI consulting services to help your business leverage artificial intelligence for growth and efficiency. Strategic AI implementation and guidance." />
-        <link rel="canonical" href="https://www.appifyintelligence.com/services/ai-consulting" />
+        <link rel="canonical" href="https://appifyintelligence.com/services/ai-consulting" />
       </Head>
       <main className="min-h-screen">
       {/* Hero Section */}
