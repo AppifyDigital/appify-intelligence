@@ -3,7 +3,7 @@ import "./globals.css";
 import Navbar from "./components/Utils/Navbar";
 import Footer from "./components/Utils/Footer";
 import CookieBar from "./components/Utils/CookieBar";
-import { Metadata } from "next";
+import { Metadata, Viewport } from "next";
 
 const manrope = Manrope({
   subsets: ["latin"],
@@ -17,8 +17,6 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://appifyintelligence.com",
   },
-
-  themeColor: { media: "(prefers-color-scheme: light)", color: "#FFB300" },
   openGraph: {
     title: "AI Development & Automation Specialists | Appify Intelligence",
     description:
@@ -45,9 +43,10 @@ export const metadata: Metadata = {
   },
 };
 
-export const viewport = {
+export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
+  themeColor: { media: "(prefers-color-scheme: light)", color: "#FFB300" },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

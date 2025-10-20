@@ -50,7 +50,7 @@ export default function CookieBar() {
             <div className="flex gap-3">
               <button
                 onClick={handleAccept}
-                className="rounded-full bg-primary px-6 py-2.5 text-sm font-medium text-white transition-colors hover:bg-primary"
+                className="rounded-full bg-black px-6 py-2.5 text-sm font-medium text-white transition-colors hover:bg-gray-800"
               >
                 Accept
               </button>

@@ -5,9 +5,14 @@ const nextConfig = {
     config.output.globalObject = `(typeof self !== 'undefined' ? self : this)`;
     return config;
   },
-  images: {
-    domains: ["images.unsplash.com"],
-  },
+  // images: {
+  //   remotePatterns: [
+  //     {
+  //       protocol: "https",
+  //       hostname: "images.unsplash.com",
+  //     },
+  //   ],
+  // },
 };
 
 module.exports = nextConfig;
