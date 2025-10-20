@@ -191,7 +191,7 @@ export default function AIAutomation() {
                 <Image
                   width={600}
                   height={500}
-                  src="/assets/images/services/ai-automation/ai-automation-image-1.png"
+                  src="/assets/images/services/ai-automation/ai-automation-image-1.webp"
                   alt="AI-powered business process automation with intelligent workflow management"
                   title="AI Automation"
                   loading="lazy"
@@ -221,7 +221,7 @@ export default function AIAutomation() {
                 <Image
                   width={600}
                   height={500}
-                  src="/assets/images/services/ai-automation/ai-automation-image-2.png"
+                  src="/assets/images/services/ai-automation/ai-automation-image-2.webp"
                   alt="Advanced AI automation capabilities for business process optimization"
                   title="AI Automation Capabilities"
                   loading="lazy"
@@ -373,7 +373,7 @@ export default function AIAutomation() {
                 <Image
                   width={700}
                   height={400}
-                  src="/assets/images/services/ai-automation/ai-automation-image-3.png"
+                  src="/assets/images/services/ai-automation/ai-automation-image-3.webp"
                   alt="AI automation competitive advantages and business benefits"
                   title="AI Automation Competitive Advantage"
                   loading="lazy"
@@ -420,7 +420,7 @@ export default function AIAutomation() {
               <Image
                 width={400}
                 height={300}
-                src="/assets/images/home/Proven_track_record.png"
+                src="/assets/images/home/Proven_track_record.webp"
                 alt="Proven track record in AI development and automation projects"
                 title="Proven Track Record"
                 loading="lazy"
@@ -448,7 +448,7 @@ export default function AIAutomation() {
               <Image
                 width={400}
                 height={300}
-                src="/assets/images/home/Deep_AI_Expertise.png"
+                src="/assets/images/home/Deep_AI_Expertise.webp"
                 alt="Deep AI expertise across machine learning, automation, and intelligent systems"
                 title="Deep AI Expertise"
                 loading="lazy"
@@ -476,7 +476,7 @@ export default function AIAutomation() {
               <Image
                 width={400}
                 height={300}
-                src="/assets/images/home/Full_Service_AI.png"
+                src="/assets/images/home/Full_Service_AI.webp"
                 alt="Full-service AI solutions from strategy to implementation"
                 title="Full-Service AI"
                 loading="lazy"
@@ -504,7 +504,7 @@ export default function AIAutomation() {
               <Image
                 width={400}
                 height={300}
-                src="/assets/images/home/Global_Trust.png"
+                src="/assets/images/home/Global_Trust.webp"
                 alt="Globally trusted AI solutions with proven reliability"
                 title="Global Trust"
                 loading="lazy"
@@ -532,7 +532,7 @@ export default function AIAutomation() {
               <Image
                 width={400}
                 height={300}
-                src="/assets/images/home/Award_Recognition.png"
+                src="/assets/images/home/Award_Recognition.webp"
                 alt="Award-winning AI development and recognition in the industry"
                 title="Award Recognition"
                 loading="lazy"

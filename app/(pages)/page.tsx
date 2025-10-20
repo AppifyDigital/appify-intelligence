@@ -186,7 +186,7 @@ export default function Home() {
                 <Image
                   width={500}
                   height={500}
-                  src="/assets/images/home/Training_&_education.png"
+                  src="/assets/images/home/Training_&_education.webp"
                   alt="AI-powered training and education platform showcasing digital learning solutions"
                   title="Training & Education - AI Learning Platform"
                   loading="eager"
@@ -219,7 +219,7 @@ export default function Home() {
                 <Image
                   width={500}
                   height={500}
-                  src="/assets/images/home/HR_&_recruitment.png"
+                  src="/assets/images/home/HR_&_recruitment.webp"
                   alt="AI-driven HR and recruitment platform with intelligent candidate screening"
                   title="HR & Recruitment - AI Talent Management"
                   loading="eager"
@@ -249,7 +249,7 @@ export default function Home() {
                 <Image
                   width={500}
                   height={500}
-                  src="/assets/images/home/Mental_health_&_wellbeing.png"
+                  src="/assets/images/home/Mental_health_&_wellbeing.webp"
                   alt="AI-powered mental health and wellbeing support platform with CBT features"
                   title="Mental Health & Wellbeing - AI Support Platform"
                   loading="eager"
@@ -342,7 +342,7 @@ export default function Home() {
                 <Image
                   width={500}
                   height={500}
-                  src="/assets/images/home/AppifyWebX_image.png"
+                  src="/assets/images/home/AppifyWebX_image.webp"
                   alt="AppifyWebX Global Platform - AI-powered web development and automation solution"
                   title="AppifyWebX Global Platform"
                   loading="lazy"
@@ -389,7 +389,7 @@ export default function Home() {
                 <Image
                   width={500}
                   height={500}
-                  src="/assets/images/home/AppifyX_image.png"
+                  src="/assets/images/home/AppifyX_image.webp"
                   alt="AppifyX Agency Tool - Comprehensive AI automation and workflow management platform"
                   title="AppifyX Agency Tool"
                   loading="lazy"
@@ -484,7 +484,7 @@ export default function Home() {
                   <Image
                     width={500}
                     height={500}
-                    src="/assets/images/home/digital_media_awards.png"
+                    src="/assets/images/home/digital_media_awards.webp"
                     alt="Digital Media Awards - Best App recognition badge"
                     title="Best App Award"
                     loading="lazy"
@@ -510,7 +510,7 @@ export default function Home() {
                   <Image
                     width={500}
                     height={500}
-                    src="/assets/images/home/digital_media_awards.png"
+                    src="/assets/images/home/digital_media_awards.webp"
                     alt="Digital Media Awards - Best Small Agency recognition badge"
                     title="Best Small Agency Award"
                     loading="lazy"
@@ -536,7 +536,7 @@ export default function Home() {
                   <Image
                     width={500}
                     height={500}
-                    src="/assets/images/home/digital_media_awards.png"
+                    src="/assets/images/home/digital_media_awards.webp"
                     alt="Digital Media Awards - Best Use of AI recognition badge"
                     title="Best Use of AI Award"
                     loading="lazy"

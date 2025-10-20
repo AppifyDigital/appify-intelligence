@@ -193,7 +193,7 @@ export default function AIChatbotsAgents() {
                 <Image
                   width={600}
                   height={500}
-                  src="/assets/images/services/ai-chatbots-and-agents/ai-chatbots-and-agents-image-1.png"
+                  src="/assets/images/services/ai-chatbots-and-agents/ai-chatbots-and-agents-image-1.webp"
                   alt="AI chatbots and intelligent agents for conversational automation"
                   title="AI Chatbots & Agents"
                   loading="lazy"
@@ -223,7 +223,7 @@ export default function AIChatbotsAgents() {
                 <Image
                   width={600}
                   height={500}
-                  src="/assets/images/services/ai-chatbots-and-agents/ai-chatbots-and-agents-image-2.png"
+                  src="/assets/images/services/ai-chatbots-and-agents/ai-chatbots-and-agents-image-2.webp"
                   alt="Advanced AI chatbot solutions and intelligent agent development"
                   title="AI Chatbots What We Build"
                   loading="lazy"
@@ -381,7 +381,7 @@ export default function AIChatbotsAgents() {
                 <Image
                   width={700}
                   height={400}
-                  src="/assets/images/services/ai-chatbots-and-agents/ai-chatbots-and-agents-image-3.png"
+                  src="/assets/images/services/ai-chatbots-and-agents/ai-chatbots-and-agents-image-3.webp"
                   alt="AI chatbots competitive advantages and business benefits"
                   title="AI Chatbots Competitive Advantage"
                   loading="lazy"
@@ -430,7 +430,7 @@ export default function AIChatbotsAgents() {
               <Image
                 width={400}
                 height={300}
-                src="/assets/images/home/Proven_track_record.png"
+                src="/assets/images/home/Proven_track_record.webp"
                 alt="Proven track record in AI development and automation projects"
                 title="Proven Track Record"
                 loading="lazy"
@@ -458,7 +458,7 @@ export default function AIChatbotsAgents() {
               <Image
                 width={400}
                 height={300}
-                src="/assets/images/home/Deep_AI_Expertise.png"
+                src="/assets/images/home/Deep_AI_Expertise.webp"
                 alt="Deep AI expertise across machine learning, automation, and intelligent systems"
                 title="Deep AI Expertise"
                 loading="lazy"
@@ -486,7 +486,7 @@ export default function AIChatbotsAgents() {
               <Image
                 width={400}
                 height={300}
-                src="/assets/images/home/Full_Service_AI.png"
+                src="/assets/images/home/Full_Service_AI.webp"
                 alt="Full-service AI solutions from strategy to implementation"
                 title="Full-Service AI"
                 loading="lazy"
@@ -514,7 +514,7 @@ export default function AIChatbotsAgents() {
               <Image
                 width={400}
                 height={300}
-                src="/assets/images/home/Global_Trust.png"
+                src="/assets/images/home/Global_Trust.webp"
                 alt="Globally trusted AI solutions with proven reliability"
                 title="Global Trust"
                 loading="lazy"
@@ -542,7 +542,7 @@ export default function AIChatbotsAgents() {
               <Image
                 width={400}
                 height={300}
-                src="/assets/images/home/Award_Recognition.png"
+                src="/assets/images/home/Award_Recognition.webp"
                 alt="Award-winning AI development and recognition in the industry"
                 title="Award Recognition"
                 loading="lazy"

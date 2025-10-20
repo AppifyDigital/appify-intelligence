@@ -11,7 +11,7 @@ const services = [
     description:
       "Strategic AI consulting. Roadmap development. Opportunity analysis. Implementation planning.",
     tags: ["Strategy", "Model selection", "Implementation support"],
-    image: "/assets/images/home/AI_consulting.png",
+    image: "/assets/images/home/AI_consulting.webp",
     link: "/services/ai-consulting",
   },
   {
@@ -21,7 +21,7 @@ const services = [
     description:
       "AI-powered web development. Personalisation and automation. Smart user experiences.",
     tags: ["Smart", "Adaptive websites", "AI integration"],
-    image: "/assets/images/home/AI_augmented_web_solutions.png",
+    image: "/assets/images/home/AI_augmented_web_solutions.webp",
     link: "/services/ai-augmented-web-solutions",
   },
   {
@@ -31,7 +31,7 @@ const services = [
     description:
       "Intelligent conversational AI. 24/7 customer support. Natural language processing.",
     tags: ["Conversational AI", "NLP", "Automation"],
-    image: "/assets/images/home/AI_chatbots_&_agents.png",
+    image: "/assets/images/home/AI_chatbots_&_agents.webp",
     link: "/services/ai-chatbots-agents",
   },
   {
@@ -41,7 +41,7 @@ const services = [
     description:
       "Process automation. Workflow optimisation. Intelligent task management.",
     tags: ["Workflow", "Process optimisation", "Efficiency"],
-    image: "/assets/images/home/AI_automation.png",
+    image: "/assets/images/home/AI_automation.webp",
     link: "/services/ai-automation",
   },
   {
@@ -51,7 +51,7 @@ const services = [
     description:
       "Retrieval-Augmented Generation. Knowledge base integration. Intelligent document processing.",
     tags: ["Knowledge base", "Document AI", "Semantic search"],
-    image: "/assets/images/home/RAG_Systems.png",
+    image: "/assets/images/home/RAG_Systems.webp",
     link: "/services/rag-systems",
   },
   {
@@ -60,7 +60,7 @@ const services = [
     title: "AI dashboards",
     description: "Real-time analytics. Predictive insights. Custom reporting solutions.",
     tags: ["Analytics", "Insights", "Reporting"],
-    image: "/assets/images/home/AI_dashboards.png",
+    image: "/assets/images/home/AI_dashboards.webp",
     link: "/services/ai-dashboards",
   },
 ];
