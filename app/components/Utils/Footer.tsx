@@ -51,7 +51,7 @@ function Footer() {
           <Link href="/#success-stories" className="transition-colors hover:text-primary">
             Success Stories
           </Link>
-          <Link href="/contact" className="text-primary hover:text-primary">
+          <Link href="/contact" className="text-black font-bold transition-colors hover:text-primary">
             Contact us
           </Link>
         </nav>
@@ -199,7 +199,7 @@ function Footer() {
                 href="https://clutch.co/profile/appify-0#reviews"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-3 inline-flex items-center gap-1 text-sm text-amber-400 transition-colors hover:text-amber-300"
+                className="mt-3 inline-flex items-center gap-1 text-sm text-black transition-colors hover:text-black/80"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
