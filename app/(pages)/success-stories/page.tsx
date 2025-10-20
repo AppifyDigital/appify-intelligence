@@ -1,6 +1,7 @@
 export const metadata = {
   title: "Success Stories | Appify Intelligence Ireland",
-  description: "Read about Appify Intelligence's client success stories and case studies showcasing our AI development and automation expertise.",
+  description:
+    "Read about Appify Intelligence's client success stories and case studies showcasing our AI development and automation expertise.",
   alternates: {
     canonical: "https://appifyintelligence.com/success-stories",
   },

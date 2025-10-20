@@ -97,7 +97,8 @@ export default function AIServices() {
     if (scrollRef.current && containerRef.current) {
       const scrollContainer = scrollRef.current;
       const containerWidth = containerRef.current.offsetWidth;
-      const scrollPosition = activeService * containerWidth;
+      const gap = 24; // 6 * 4px (gap-6 in Tailwind)
+      const scrollPosition = activeService * (containerWidth + gap);
 
       scrollContainer.scrollTo({
         left: scrollPosition,
@@ -108,7 +109,7 @@ export default function AIServices() {
 
   return (
     <section id="services" className="bg-white py-20">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-20">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-0">
         {/* Section Title */}
         <h2 className="mb-12 text-5xl font-bold text-gray-900 md:text-6xl">
           AI services
@@ -149,14 +150,13 @@ export default function AIServices() {
                 {services.map((service, index) => (
                   <div
                     key={service.id}
-                    className="group w-[calc(100%-150px)] flex-shrink-0 cursor-pointer transition-transform hover:scale-95"
+                    className="group w-[calc(100%-200px)] flex-shrink-0 cursor-pointer transition-transform hover:scale-95"
                     ref={index === 0 ? containerRef : undefined}
                     onClick={() => {
                       router.push(service.link);
                     }}
                   >
-                    <div className="relative h-[500px] overflow-hidden rounded-3xl">
-                      {/* Background Image */}
+                    <div className="relative h-[500px] overflow-hidden rounded-[8px]">
                       <div
                         className="absolute inset-0 bg-cover bg-center"
                         style={{
@@ -166,28 +166,19 @@ export default function AIServices() {
 
                       <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
 
-                      <div className="relative flex h-full flex-col justify-between p-8 text-white md:p-12">
+                      <div className="relative flex h-full flex-col justify-between p-8 text-white">
                         <div>
-                          <h3 className="mb-4 text-4xl font-bold md:text-5xl">
-                            {service.title}
-                          </h3>
+                          <h3 className="mb-4 text-3xl font-bold">{service.title}</h3>
                         </div>
 
                         <div>
-                          <p className="mb-6 text-xl leading-relaxed md:text-2xl">
+                          <p className="mb-6 text-lg font-thin leading-relaxed">
                             {service.description}
                           </p>
 
                           {/* Tags */}
-                          <div className="flex flex-wrap gap-3">
-                            {service.tags.map((tag, idx) => (
-                              <span
-                                key={idx}
-                                className="rounded-full bg-white/20 px-4 py-2 text-sm font-medium backdrop-blur-sm"
-                              >
-                                {tag}
-                              </span>
-                            ))}
+                          <div className="inline-flex rounded-full bg-white/15 p-4 text-sm font-medium text-white/95 backdrop-blur-md">
+                            <span>{services[activeService].tags.join(" • ")}</span>
                           </div>
                         </div>
                       </div>
@@ -200,7 +191,7 @@ export default function AIServices() {
             {/* Mobile: Show only active section */}
             <div className="block lg:hidden">
               <div
-                className="group relative h-[500px] cursor-pointer overflow-hidden rounded-3xl transition-transform hover:scale-105"
+                className="group relative h-[500px] cursor-pointer overflow-hidden rounded-[8px] transition-transform hover:scale-105"
                 onClick={() => handleServiceClick(activeService)}
               >
                 {/* Background Image */}
@@ -213,23 +204,6 @@ export default function AIServices() {
 
                 {/* Gradient Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
-
-                {/* Interactive indicator */}
-                <div className="absolute right-4 top-4 rounded-full bg-white/20 p-2 opacity-0 backdrop-blur-sm transition-opacity group-hover:opacity-100">
-                  <svg
-                    className="h-4 w-4 text-white"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M9 5l7 7-7 7"
-                    />
-                  </svg>
-                </div>
 
                 {/* Content */}
                 <div className="relative flex h-full flex-col justify-between p-8 text-white">
@@ -245,15 +219,8 @@ export default function AIServices() {
                     </p>
 
                     {/* Tags */}
-                    <div className="flex flex-wrap gap-3">
-                      {services[activeService].tags.map((tag, idx) => (
-                        <span
-                          key={idx}
-                          className="rounded-full bg-white/20 px-4 py-2 text-sm font-medium backdrop-blur-sm"
-                        >
-                          {tag}
-                        </span>
-                      ))}
+                    <div className="inline-flex rounded-full bg-white/15 px-4 py-4 text-sm font-medium text-white/95 backdrop-blur-md">
+                      <span>{services[activeService].tags.join(" • ")}</span>
                     </div>
                   </div>
                 </div>

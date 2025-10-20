@@ -71,7 +71,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-tl from-white/10 via-white/90 to-white/100" />
         </div>
 
-        <div className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 md:py-32 lg:px-20">
+        <div className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 md:py-32 lg:px-0">
           <div className="max-w-4xl">
             {/* Main Heading */}
             <h1 className="animate-fade-in-up mb-8 text-5xl font-bold leading-tight text-gray-900 md:text-6xl lg:text-7xl">
@@ -142,7 +142,7 @@ export default function Home() {
 
       {/* AI Expertise Across Industries Section */}
       <section id="expertise" className="bg-gray-50 py-20">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-0">
           {/* Section Header */}
           <div className="mb-12 text-center">
             <h2
@@ -176,7 +176,7 @@ export default function Home() {
             <div
               id="card-1"
               data-animate
-              className={`overflow-hidden rounded-xl bg-white shadow-sm transition-all duration-300 hover:scale-105 hover:shadow-lg ${
+              className={`overflow-hidden rounded-[8px] bg-white shadow-sm transition-all duration-300 hover:scale-105 hover:shadow-lg ${
                 visibleElements.has("card-1")
                   ? "animate-fade-in-up"
                   : "translate-y-8 opacity-0"
@@ -209,7 +209,7 @@ export default function Home() {
             <div
               id="card-2"
               data-animate
-              className={`overflow-hidden rounded-xl bg-white shadow-sm transition-all duration-300 hover:scale-105 hover:shadow-lg ${
+              className={`overflow-hidden rounded-[8px] bg-white shadow-sm transition-all duration-300 hover:scale-105 hover:shadow-lg ${
                 visibleElements.has("card-2")
                   ? "animate-fade-in-up"
                   : "translate-y-8 opacity-0"
@@ -239,7 +239,7 @@ export default function Home() {
             <div
               id="card-3"
               data-animate
-              className={`overflow-hidden rounded-xl bg-white shadow-sm transition-all duration-300 hover:scale-105 hover:shadow-lg ${
+              className={`overflow-hidden rounded-[8px] bg-white shadow-sm transition-all duration-300 hover:scale-105 hover:shadow-lg ${
                 visibleElements.has("card-3")
                   ? "animate-fade-in-up"
                   : "translate-y-8 opacity-0"
@@ -298,7 +298,7 @@ export default function Home() {
 
       {/* In-house AI Product Innovation Section */}
       <section id="products" className="bg-white py-20">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-0">
           {/* Section Header */}
           <div className="mb-12 text-center">
             <h2
@@ -332,7 +332,7 @@ export default function Home() {
             <div
               id="product-1"
               data-animate
-              className={`overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:scale-105 hover:shadow-xl ${
+              className={`overflow-hidden rounded-[8px] border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:scale-105 hover:shadow-xl ${
                 visibleElements.has("product-1")
                   ? "animate-fade-in-up"
                   : "translate-y-8 opacity-0"
@@ -379,7 +379,7 @@ export default function Home() {
             <div
               id="product-2"
               data-animate
-              className={`overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:scale-105 hover:shadow-xl ${
+              className={`overflow-hidden rounded-[8px] border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:scale-105 hover:shadow-xl ${
                 visibleElements.has("product-2")
                   ? "animate-fade-in-up"
                   : "translate-y-8 opacity-0"
@@ -428,7 +428,7 @@ export default function Home() {
 
       {/* Award-winning AI Expertise Section */}
       <section className="bg-gray-50 py-20">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-0">
           {/* Section Header */}
           <div className="mb-8 text-center">
             <h2
@@ -473,7 +473,7 @@ export default function Home() {
             <div
               id="award-1"
               data-animate
-              className={`rounded-xl bg-white p-8 text-center shadow-sm transition-all duration-300 hover:scale-105 hover:shadow-lg ${
+              className={`rounded-[8px] bg-white p-8 text-center shadow-sm transition-all duration-300 hover:scale-105 hover:shadow-lg ${
                 visibleElements.has("award-1")
                   ? "animate-fade-in-up"
                   : "translate-y-8 opacity-0"
@@ -499,7 +499,7 @@ export default function Home() {
             <div
               id="award-2"
               data-animate
-              className={`rounded-xl bg-white p-8 text-center shadow-sm transition-all duration-300 hover:scale-105 hover:shadow-lg ${
+              className={`rounded-[8px] bg-white p-8 text-center shadow-sm transition-all duration-300 hover:scale-105 hover:shadow-lg ${
                 visibleElements.has("award-2")
                   ? "animate-fade-in-up"
                   : "translate-y-8 opacity-0"
@@ -525,7 +525,7 @@ export default function Home() {
             <div
               id="award-3"
               data-animate
-              className={`rounded-xl bg-white p-8 text-center shadow-sm transition-all duration-300 hover:scale-105 hover:shadow-lg ${
+              className={`rounded-[8px] bg-white p-8 text-center shadow-sm transition-all duration-300 hover:scale-105 hover:shadow-lg ${
                 visibleElements.has("award-3")
                   ? "animate-fade-in-up"
                   : "translate-y-8 opacity-0"
@@ -570,21 +570,20 @@ export default function Home() {
       <WhyChoose />
 
       {/* Solutions In Action Section */}
-      <div className="bg-white py-20">
+      <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-0">
         {/* Section 1: See our AI solutions in action */}
-        <section className="container relative mx-auto border border-gray-200 shadow-lg">
-          <div>
-            <div className="absolute inset-0 overflow-hidden">
-              {/* Top border line */}
-              <div className="animate-border-top absolute left-0 top-0 h-1 w-full bg-gradient-to-r from-transparent via-primary to-transparent opacity-80"></div>
-              {/* Right border line */}
-              <div className="animate-border-right absolute right-0 top-0 h-full w-1 bg-gradient-to-b from-transparent via-primary to-transparent opacity-80"></div>
-              {/* Bottom border line */}
-              <div className="animate-border-bottom absolute bottom-0 right-0 h-1 w-full bg-gradient-to-l from-transparent via-primary to-transparent opacity-80"></div>
-              {/* Left border line */}
-              <div className="animate-border-left absolute bottom-0 left-0 h-full w-1 bg-gradient-to-t from-transparent via-primary to-transparent opacity-80"></div>
-            </div>
-            <div className="relative mx-auto max-w-5xl px-4 py-4 text-center sm:px-6 sm:py-10 lg:px-20">
+        <section className="container relative mx-auto bg-white shadow-lg">
+          <div className=" ">
+            <div className="group relative mx-auto text-center sm:px-6 sm:py-10 lg:px-20">
+              {/* Top border */}
+              <div className="absolute left-1/2 top-0 h-[5px] w-16 -translate-x-1/2 rounded-t-3xl bg-[#FFB300] transition-all duration-500 group-hover:left-0 group-hover:w-full group-hover:translate-x-0"></div>
+              {/* Right border */}
+              <div className="absolute right-0 top-1/2 h-16 w-[5px] -translate-y-1/2 rounded-r-3xl bg-[#FFB300] transition-all duration-500 group-hover:top-0 group-hover:h-full group-hover:translate-y-0"></div>
+              {/* Bottom border */}
+              <div className="absolute bottom-0 left-1/2 h-[5px] w-16 -translate-x-1/2 rounded-b-3xl bg-[#FFB300] transition-all duration-500 group-hover:left-0 group-hover:w-full group-hover:translate-x-0"></div>
+              {/* Left border */}
+              <div className="absolute left-0 top-1/2 h-16 w-[5px] -translate-y-1/2 rounded-l-3xl bg-[#FFB300] transition-all duration-500 group-hover:top-0 group-hover:h-full group-hover:translate-y-0"></div>
+
               <h2
                 id="solutions-title"
                 data-animate
@@ -625,7 +624,7 @@ export default function Home() {
           </div>
 
           {/* Section 2: Infinite Scrolling Industries */}
-          <div className="overflow-hidden border-t border-black bg-white py-4">
+          <div className="overflow-hidden bg-white py-4">
             <div className="relative">
               {/* Gradient overlays for fade effect */}
               <div className="absolute bottom-0 left-0 top-0 z-10 w-32 bg-gradient-to-r from-white to-transparent" />
@@ -637,8 +636,20 @@ export default function Home() {
                 className="animate-scroll flex gap-8 whitespace-nowrap"
               >
                 {allIndustries.map((industry, index) => (
-                  <div key={index} className="inline-flex items-center gap-3 px-6 py-3">
-                    <ArrowRight className="h-4 w-4 text-primary" />
+                  <div key={index} className="inline-flex items-center gap-4 px-6 py-3">
+                    <svg
+                      width="42"
+                      height="7"
+                      viewBox="0 0 42 7"
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
+                      className="shrink-0"
+                    >
+                      <path
+                        d="M41.9728 3.5L35.9132 0V2.9L0.081543 3.5L35.9132 4.10001V7.00001L41.9728 3.5Z"
+                        fill="#FFB300"
+                      />
+                    </svg>
                     <span className="text-lg font-medium text-gray-900">{industry}</span>
                   </div>
                 ))}
@@ -648,7 +659,7 @@ export default function Home() {
         </section>
 
         {/* Section 3: Contact CTA */}
-        <section className="bg-white py-20">
+        <section className="py-20">
           <div className="mx-auto max-w-5xl px-4 text-center sm:px-6 lg:px-20">
             <h2
               id="contact-title"
@@ -673,7 +684,7 @@ export default function Home() {
             >
               <Link
                 href="/contact"
-                className="hover:bg-primary/90 inline-flex items-center justify-center rounded-full bg-primary px-8 py-4 text-2xl font-medium text-black transition-all duration-300 hover:scale-105 hover:shadow-lg"
+                className="inline-flex items-center justify-center rounded-full bg-primary px-8 py-4 text-2xl font-medium text-black transition-all duration-300 hover:scale-105 hover:bg-primary/90 hover:shadow-lg"
               >
                 Contact us
               </Link>

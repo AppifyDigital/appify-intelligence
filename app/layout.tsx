@@ -42,10 +42,18 @@ export const metadata: Metadata = {
     icon: [
       { url: "/favicon.ico", sizes: "any" },
       { url: "/assets/images/logos/favicon.svg", type: "image/svg+xml" },
-      { url: "/assets/images/logos/favicon-96x96.png", sizes: "96x96", type: "image/png" },
+      {
+        url: "/assets/images/logos/favicon-96x96.png",
+        sizes: "96x96",
+        type: "image/png",
+      },
     ],
     apple: [
-      { url: "/assets/images/logos/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+      {
+        url: "/assets/images/logos/apple-touch-icon.png",
+        sizes: "180x180",
+        type: "image/png",
+      },
     ],
     other: [
       {

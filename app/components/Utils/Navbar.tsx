@@ -77,13 +77,13 @@ export default function Navbar() {
             {/* Logo */}
             <Link href="/" className="flex items-center">
               <div className="flex h-10 w-10 items-center justify-center">
-                <Image 
-                  src={Logo} 
-                  alt="Appify Intelligence - AI Development & Automation Specialists" 
+                <Image
+                  src={Logo}
+                  alt="Appify Intelligence - AI Development & Automation Specialists"
                   title="Appify Intelligence"
                   loading="eager"
-                  width={40} 
-                  height={40} 
+                  width={40}
+                  height={40}
                 />
               </div>
             </Link>
@@ -179,13 +179,13 @@ export default function Navbar() {
         >
           {/* Sidebar Header */}
           <div className="flex items-center justify-between border-b p-4">
-            <Image 
-              src={Logo} 
-              alt="Appify Intelligence - AI Development & Automation Specialists" 
+            <Image
+              src={Logo}
+              alt="Appify Intelligence - AI Development & Automation Specialists"
               title="Appify Intelligence"
               loading="eager"
-              width={40} 
-              height={40} 
+              width={40}
+              height={40}
             />
             <button
               onClick={closeMobileMenu}

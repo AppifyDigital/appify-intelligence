@@ -19,7 +19,7 @@ const TikTokIcon = () => (
 function Footer() {
   return (
     <footer className="border-t border-black/10 bg-white pb-12 text-black">
-      <div className="container mx-auto space-y-8 px-4 sm:space-y-12">
+      <div className="mx-auto max-w-7xl space-y-8 px-4 sm:space-y-12 sm:px-6 lg:px-0">
         {/* Logo Section */}
         <div className="flex justify-center"></div>
 
@@ -51,7 +51,10 @@ function Footer() {
           <Link href="/#success-stories" className="transition-colors hover:text-primary">
             Success Stories
           </Link>
-          <Link href="/contact" className="text-black font-bold transition-colors hover:text-primary">
+          <Link
+            href="/contact"
+            className="font-bold text-black transition-colors hover:text-primary"
+          >
             Contact us
           </Link>
         </nav>
@@ -255,10 +258,7 @@ function Footer() {
         {/* Bottom Section */}
         <div className="flex flex-col items-center justify-between space-y-8 sm:flex-row sm:space-y-0">
           <div className="flex flex-col space-y-4 text-center sm:flex-row sm:space-x-8 sm:space-y-0">
-            <Link
-              href="/privacy-policy"
-              className="transition-colors hover:text-primary"
-            >
+            <Link href="/privacy-policy" className="transition-colors hover:text-primary">
               Privacy Policy
             </Link>
             {/* Bottom Section <Link
