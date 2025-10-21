@@ -13,6 +13,19 @@ const nextConfig = {
         destination: "https://appifyintelligence.com/:path*",
         permanent: true,
       },
+      // Redirect .co.uk -> .com
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "appifyintelligence.co.uk" }],
+        destination: "https://appifyintelligence.com/:path*",
+        permanent: true,
+      },
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "www.appifyintelligence.co.uk" }],
+        destination: "https://appifyintelligence.com/:path*",
+        permanent: true,
+      },
     ];
   },
   // images: {
