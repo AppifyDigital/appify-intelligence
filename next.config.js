@@ -5,6 +5,16 @@ const nextConfig = {
     config.output.globalObject = `(typeof self !== 'undefined' ? self : this)`;
     return config;
   },
+  async redirects() {
+    return [
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "www.appifyintelligence.com" }],
+        destination: "https://appifyintelligence.com/:path*",
+        permanent: true,
+      },
+    ];
+  },
   // images: {
   //   remotePatterns: [
   //     {
