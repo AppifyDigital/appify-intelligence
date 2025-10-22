@@ -88,7 +88,7 @@ export default function WhyChoose() {
         {/* Title */}
         <div className="mb-32 text-center">
           <h2 className="text-4xl font-bold text-gray-900 md:text-5xl">
-            Why choose Appify intelligence?
+            Why choose Appify Intelligence?
           </h2>
         </div>
 

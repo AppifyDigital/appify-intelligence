@@ -9,17 +9,20 @@ import { ArrowRight } from "lucide-react";
 
 const industries = [
   "AI for Healthcare",
-  "AI for Retail",
+  "AI for Personnel",
   "AI for Logistics",
   "AI for SME",
   "AI for Enterprise",
-  "AI for Fitness",
+  "AI for Productivity",
   "AI for Sports",
-  "AI for Finance",
+  "AI for Management",
 ];
 
 // Duplicate industries for seamless loop
 const allIndustries = [
+  ...industries,
+  ...industries,
+  ...industries,
   ...industries,
   ...industries,
   ...industries,
@@ -71,7 +74,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-tl from-white/10 via-white/90 to-white/100" />
         </div>
 
-        <div className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 md:py-32 lg:px-0">
+        <div className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 md:py-32 xl:px-0">
           <div className="max-w-4xl">
             {/* Main Heading */}
             <h1 className="animate-fade-in-up mb-8 text-5xl font-bold leading-tight text-gray-900 md:text-6xl lg:text-7xl">
@@ -80,8 +83,8 @@ export default function Home() {
 
             {/* Subheading */}
             <p className="animate-fade-in-up animation-delay-200 mb-6 text-2xl font-medium leading-snug text-primary md:text-3xl lg:text-4xl">
-              At Appify Intelligence, we are Ireland&apos;s specialists in full-stack AI
-              development - delivering world-class software.
+              At Appify Intelligence, we accelerate innovation, automate workflows, and
+              unlock new revenue streams with custom AI.
             </p>
 
             {/* Body Text */}
@@ -142,7 +145,7 @@ export default function Home() {
 
       {/* AI Expertise Across Industries Section */}
       <section id="expertise" className="bg-gray-50 py-20">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-0">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 xl:px-0">
           {/* Section Header */}
           <div className="mb-12 text-center">
             <h2
@@ -298,7 +301,7 @@ export default function Home() {
 
       {/* In-house AI Product Innovation Section */}
       <section id="products" className="bg-white py-20">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-0">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 xl:px-0">
           {/* Section Header */}
           <div className="mb-12 text-center">
             <h2
@@ -428,7 +431,7 @@ export default function Home() {
 
       {/* Award-winning AI Expertise Section */}
       <section className="bg-gray-50 py-20">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-0">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 xl:px-0">
           {/* Section Header */}
           <div className="mb-8 text-center">
             <h2
@@ -468,7 +471,7 @@ export default function Home() {
           </div>
 
           {/* Awards Cards */}
-          <div className="mx-auto mb-12 grid max-w-5xl grid-cols-1 gap-6 md:grid-cols-3">
+          <div className="mx-auto mb-12 grid max-w-5xl grid-cols-1 gap-6 md:grid-cols-2">
             {/* Best App Award */}
             <div
               id="award-1"
@@ -495,8 +498,7 @@ export default function Home() {
               <h3 className="text-lg font-bold text-gray-900">Best App</h3>
             </div>
 
-            {/* Best Small Agency Award */}
-            <div
+            {/* <div
               id="award-2"
               data-animate
               className={`rounded-[8px] bg-white p-8 text-center shadow-sm transition-all duration-300 hover:scale-105 hover:shadow-lg ${
@@ -519,7 +521,7 @@ export default function Home() {
                 </div>
               </div>
               <h3 className="text-lg font-bold text-gray-900">Best Small Agency</h3>
-            </div>
+            </div> */}
 
             {/* Best Use of AI Award */}
             <div
@@ -570,18 +572,14 @@ export default function Home() {
       <WhyChoose />
 
       {/* Solutions In Action Section */}
-      <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-0">
-        {/* Section 1: See our AI solutions in action */}
-        <section className="container relative mx-auto bg-white shadow-lg">
+      <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 xl:px-0">
+        {/* //!!! TO BE RETURNED LATER */}
+        {/* <section className="container relative mx-auto bg-white shadow-lg">
           <div className=" ">
             <div className="group relative mx-auto text-center sm:px-6 sm:py-10 lg:px-20">
-              {/* Top border */}
               <div className="absolute left-1/2 top-0 h-[5px] w-16 -translate-x-1/2 rounded-t-3xl bg-[#FFB300] transition-all duration-500 group-hover:left-0 group-hover:w-full group-hover:translate-x-0"></div>
-              {/* Right border */}
               <div className="absolute right-0 top-1/2 h-16 w-[5px] -translate-y-1/2 rounded-r-3xl bg-[#FFB300] transition-all duration-500 group-hover:top-0 group-hover:h-full group-hover:translate-y-0"></div>
-              {/* Bottom border */}
               <div className="absolute bottom-0 left-1/2 h-[5px] w-16 -translate-x-1/2 rounded-b-3xl bg-[#FFB300] transition-all duration-500 group-hover:left-0 group-hover:w-full group-hover:translate-x-0"></div>
-              {/* Left border */}
               <div className="absolute left-0 top-1/2 h-16 w-[5px] -translate-y-1/2 rounded-l-3xl bg-[#FFB300] transition-all duration-500 group-hover:top-0 group-hover:h-full group-hover:translate-y-0"></div>
 
               <h2
@@ -623,14 +621,11 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Section 2: Infinite Scrolling Industries */}
           <div className="overflow-hidden bg-white py-4">
             <div className="relative">
-              {/* Gradient overlays for fade effect */}
               <div className="absolute bottom-0 left-0 top-0 z-10 w-32 bg-gradient-to-r from-white to-transparent" />
               <div className="absolute bottom-0 right-0 top-0 z-10 w-32 bg-gradient-to-l from-white to-transparent" />
 
-              {/* Scrolling container */}
               <div
                 ref={scrollRef}
                 className="animate-scroll flex gap-8 whitespace-nowrap"
@@ -656,7 +651,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Section 3: Contact CTA */}
         <section className="py-20">

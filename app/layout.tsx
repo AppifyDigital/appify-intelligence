@@ -83,7 +83,7 @@ const organizationJsonLd = {
     "Award-nominated AI development and automation specialists delivering custom AI solutions, workflow automation, chatbots, RAG systems, and AI-augmented web solutions across Ireland and the UK.",
   foundingDate: "2020",
   email: "hello@appifyintelligence.com",
-  telephone: "+353 86 770 0933",
+  telephone: "18008523073",
   address: [
     {
       "@type": "PostalAddress",

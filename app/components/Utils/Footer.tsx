@@ -69,18 +69,18 @@ function Footer() {
               </h3>
               <div className="flex flex-col space-y-3 text-base text-black/80">
                 <h4 className="font-semibold leading-snug">
-                  Award Winning App Developers Ireland
+                  AI Business solutions experts
                 </h4>
                 <p className="text-sm leading-relaxed">
-                  Expert app developers in Ireland, building mobile apps and digital
-                  products for startups, enterprises, and well-known brands.
+                  Trusted partners in driving innovation, systems automation, business
+                  intelligence and sustainable competitive advantage with AI.
                 </p>
               </div>
               <h3 className="mb-4 mt-6 inline-flex items-center font-bold uppercase tracking-wider text-black">
                 Schedule a meeting
               </h3>
               <div className="text-sm text-black/80">
-                <p className="mb-3">
+                <p className="mb-6">
                   Book a free initial consultation with our app development experts and
                   let&apos;s discuss your app design and development options.
                 </p>

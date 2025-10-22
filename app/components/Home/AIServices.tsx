@@ -109,7 +109,7 @@ export default function AIServices() {
 
   return (
     <section id="services" className="bg-white py-20">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-0">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 xl:px-0">
         {/* Section Title */}
         <h2 className="mb-12 text-5xl font-bold text-gray-900 md:text-6xl">
           AI services
