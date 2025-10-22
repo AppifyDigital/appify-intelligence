@@ -42,7 +42,7 @@ function Footer() {
           <Link href="/#services" className="transition-colors hover:text-primary">
             Services
           </Link>
-          <Link href="/#expertise" className="transition-colors hover:text-primary">
+          <Link href="/expertise" className="transition-colors hover:text-primary">
             Expertise
           </Link>
           <Link href="/#products" className="transition-colors hover:text-primary">

@@ -1,4 +1,5 @@
 import { MetadataRoute } from 'next'
+import questions from '@/data/questions.json'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://appifyintelligence.com'
@@ -29,6 +30,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: currentDate,
       changeFrequency: 'monthly' as const,
       priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/expertise`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly' as const,
+      priority: 0.9,
     },
   ]
 
@@ -72,5 +79,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ]
 
-  return [...staticPages, ...servicePages]
+  // Question pages
+  const questionPages = questions.map((q) => ({
+    url: `${baseUrl}/expertise/${q.id}`,
+    lastModified: currentDate,
+    changeFrequency: 'monthly' as const,
+    priority: 0.7,
+  }))
+
+  return [...staticPages, ...servicePages, ...questionPages]
 }
