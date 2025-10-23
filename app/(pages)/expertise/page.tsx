@@ -32,13 +32,14 @@ export default function QuestionsIndex() {
             src="/assets/images/questions/question-bg.webp"
             alt=""
             fill
-            className="object-cover object-center opacity-80"
+            className="object-cover object-center opacity-90"
             priority
           />
           <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-gray-100" />
+          <div className="h-100 absolute bottom-0 left-0 right-0 bg-gradient-to-br from-gray-50 via-gray-100 to-gray-50" />
         </div>
 
-        <div className="relative z-10 mx-auto max-w-7xl px-4 py-16 text-left sm:px-6 xl:px-8">
+        <div className="relative z-10 mx-auto max-w-7xl px-4 lg:py-16 text-left sm:px-6 xl:px-8">
           <h1 className="mb-4 text-4xl font-bold text-gray-900 sm:text-5xl">
             Appify Intelligence - your go-to experts for everything AI.
           </h1>
@@ -51,7 +52,7 @@ export default function QuestionsIndex() {
           <div>
             <div className="relative">
               <svg
-                className="absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-gray-400"
+                className="absolute left-4 top-1/2 z-10 h-5 w-5 -translate-y-1/2 text-gray-400"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -63,21 +64,23 @@ export default function QuestionsIndex() {
                   d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
                 />
               </svg>
-              <input
-                type="search"
-                placeholder="Search"
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                className="h-20 w-full rounded-lg border-2 border-yellow-400 bg-white px-4 py-3 pl-12 text-lg text-gray-900 placeholder-gray-500 transition-all focus:border-yellow-500 focus:outline-none focus:ring-2 focus:ring-yellow-400"
-                aria-label="Search questions"
-              />
+              <div className="rotating-border-input relative h-20 w-full rounded-[8px] p-[4px]">
+                <input
+                  type="search"
+                  placeholder="Search"
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  className="h-full w-full rounded-[8px] rounded-lg border-0 bg-white px-4 py-3 pl-12 text-lg text-gray-900 placeholder-gray-500 transition-all focus:outline-none focus:ring-0"
+                  aria-label="Search questions"
+                />
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="mx-auto max-w-7xl px-4 pb-16 sm:px-6 lg:mt-2 lg:px-8">
-        <div className="overflow-hidden rounded-[8px] bg-white shadow-sm">
+      <div className="z-10 mx-auto max-w-7xl px-4 pb-16 sm:px-6 lg:mt-2 lg:mt-[-36px] lg:px-8">
+        <div className="relative z-10 overflow-hidden rounded-[8px] bg-white shadow-sm">
           {filteredQuestions.length === 0 ? (
             <div className="animate-fadeIn p-12 py-24 text-center">
               <h3 className="mb-3 text-2xl font-semibold text-gray-900">

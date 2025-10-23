@@ -390,3 +390,48 @@ body {
 .animate-fadeIn {
   animation: fadeIn 0.5s ease-out;
 }
+
+/* Rotating gradient border using CSS custom properties */
+@property --border-angle-1 {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0deg;
+}
+
+@property --border-angle-2 {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 90deg;
+}
+
+@keyframes rotateBackground {
+  to { --border-angle-1: 360deg; }
+}
+
+@keyframes rotateBackground2 {
+  to { --border-angle-2: -270deg; }
+}
+
+/* Rotating gradient border input */
+.rotating-border-input {
+  --border-angle-1: 0deg;
+  --border-angle-2: 90deg;
+  background-image: 
+    conic-gradient(
+      from var(--border-angle-1) at 10% 40%,
+      transparent,
+      #ffb300 10%,
+      transparent 30%,
+      transparent
+    ),
+    conic-gradient(
+      from var(--border-angle-2) at 90% 60%,
+      transparent,
+      #ffffff 10%,
+      transparent 60%,
+      transparent
+    );
+  animation: 
+    rotateBackground 4s ease-in-out infinite,
+    rotateBackground2 6s ease-in-out infinite;
+}
