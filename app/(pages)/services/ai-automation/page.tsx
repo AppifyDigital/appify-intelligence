@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import Head from "next/head";
 
 export default function AIAutomation() {
   const [visibleElements, setVisibleElements] = useState<Set<string>>(new Set());
@@ -32,19 +31,7 @@ export default function AIAutomation() {
   }, []);
 
   return (
-    <>
-      <Head>
-        <title>AI-Based Business Process Automation | Appify Intelligence Ireland</title>
-        <meta
-          name="description"
-          content="Enhance productivity, lower costs, and unlock new capabilities with AI-powered automation. Appify Intelligence designs intelligent systems that streamline workflows."
-        />
-        <link
-          rel="canonical"
-          href="https://appifyintelligence.com/services/ai-automation"
-        />
-      </Head>
-      <main className="min-h-screen">
+    <main className="min-h-screen">
         {/* Hero Section */}
         <section className="relative overflow-hidden bg-gray-50 md:pb-20">
           {/* Animated Background */}
@@ -607,6 +594,5 @@ export default function AIAutomation() {
           </div>
         </section>
       </main>
-    </>
   );
 }

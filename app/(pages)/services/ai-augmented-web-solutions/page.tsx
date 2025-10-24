@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import Head from "next/head";
 
 export default function AIAugmentedWebSolutions() {
   const [visibleElements, setVisibleElements] = useState<Set<string>>(new Set());
@@ -32,19 +31,7 @@ export default function AIAugmentedWebSolutions() {
   }, []);
 
   return (
-    <>
-      <Head>
-        <title>AI-Augmented Web Solutions | Appify Intelligence Ireland</title>
-        <meta
-          name="description"
-          content="Transform your online presence with AI-powered web platforms that learn, adapt, and optimise for results. Appify Intelligence integrates advanced AI capabilities into websites."
-        />
-        <link
-          rel="canonical"
-          href="https://appifyintelligence.com/services/ai-augmented-web-solutions"
-        />
-      </Head>
-      <main className="min-h-screen">
+    <main className="min-h-screen">
         {/* Hero Section */}
         <section className="relative overflow-hidden bg-gray-50 md:pb-20">
           {/* Animated Background */}
@@ -616,6 +603,5 @@ export default function AIAugmentedWebSolutions() {
           </div>
         </section>
       </main>
-    </>
   );
 }

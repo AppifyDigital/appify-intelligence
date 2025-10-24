@@ -30,7 +30,7 @@ export default function QuestionsIndex() {
         <div className="absolute inset-0 z-0">
           <Image
             src="/assets/images/questions/question-bg.webp"
-            alt=""
+            alt="AI expertise and knowledge base background with modern technology elements"
             fill
             className="object-cover object-center opacity-90"
             priority

@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import Head from "next/head";
 
 export default function AIChatbotsAgents() {
   const [visibleElements, setVisibleElements] = useState<Set<string>>(new Set());
@@ -32,19 +31,7 @@ export default function AIChatbotsAgents() {
   }, []);
 
   return (
-    <>
-      <Head>
-        <title>AI Chatbots and Intelligent Agents | Appify Intelligence Ireland</title>
-        <meta
-          name="description"
-          content="Redefine engagement with AI chatbots and intelligent agents designed for real-world business impact. Our solutions deliver human-like conversations that scale support."
-        />
-        <link
-          rel="canonical"
-          href="https://appifyintelligence.com/services/ai-chatbots-agents"
-        />
-      </Head>
-      <main className="min-h-screen">
+    <main className="min-h-screen">
         {/* Hero Section */}
         <section className="relative overflow-hidden bg-gray-50 md:pb-20">
           {/* Animated Background */}
@@ -613,6 +600,5 @@ export default function AIChatbotsAgents() {
           </div>
         </section>
       </main>
-    </>
   );
 }
